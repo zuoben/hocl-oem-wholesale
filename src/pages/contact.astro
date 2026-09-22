@@ -1,0 +1,65 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import InquiryForm from '../components/InquiryForm.astro';
+
+const faqItems = [
+  {
+    title: 'How fast do you reply?',
+    description:
+      'We typically reply within <strong>~24 hours</strong> on business days. Complete RFQs (buyer type, product, quantity, destination) get faster, more accurate quotes.',
+  },
+  {
+    title: 'What should I include in my message?',
+    description:
+      'Concentration preferences, bottle size, private-label vs wholesale, estimated volume, ship-to country, and timeline. Mention if you need samples first.',
+  },
+  {
+    title: 'Do you accept US market buyers?',
+    description:
+      'Yes — the site is framed for English / US-market B2B buyers (salons, retailers, distributors, and brands). Export and compliance details are discussed per inquiry.',
+  },
+];
+---
+
+<PageLayout
+  title="Contact / Request a Quote"
+  description="Contact Clearion Labs for HOCl spray OEM, private label, and wholesale quotes. Sample-first. Reply typically within ~24 hours."
+>
+  <section class="bg-gradient-to-b from-brand-50 to-white py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 text-center sm:px-6">
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Contact us</h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+        Factory-style RFQ for HOCl spray OEM and wholesale. Cosmetics / personal care inquiries only.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-slate-700">
+        <span class="flex items-center gap-2"><span class="text-brand-600">●</span> Quote ~24h</span>
+        <span class="flex items-center gap-2"><span class="text-brand-600">●</span> Sample-first</span>
+        <span class="flex items-center gap-2"><span class="text-brand-600">●</span> Export-ready</span>
+      </div>
+      <a href="#inquiry-form" class="mt-8 inline-flex rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700">
+        Go to inquiry form
+      </a>
+    </div>
+  </section>
+
+  <InquiryForm />
+
+  <section class="py-12">
+    <div class="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-3 sm:px-6">
+      {[
+        { t: 'OEM / Private Label', d: 'Concentration, packaging, and sampling RFQs for branded HOCl spray.', href: '/oem' },
+        { t: 'Wholesale', d: 'Price list, MOQ, and open-account conversations for bulk buyers.', href: '/wholesale' },
+        { t: 'Email fallback', d: 'inquiries@clearionlabs.example — replace with your real inbox before go-live.' },
+      ].map((c) => (
+        <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h3 class="font-semibold text-slate-900">{c.t}</h3>
+          <p class="mt-2 text-sm text-slate-600">{c.d}</p>
+          {c.href && <a href={c.href} class="mt-3 inline-block text-sm font-semibold text-brand-700">Learn more →</a>}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <FAQ title="Contact FAQ" items={faqItems} />
+</PageLayout>

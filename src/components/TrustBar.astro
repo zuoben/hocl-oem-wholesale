@@ -1,0 +1,22 @@
+---
+const items = [
+  { label: 'Sample-first', hint: 'Approve before bulk' },
+  { label: 'Quote ~24h', hint: 'Business-day replies' },
+  { label: 'Cosmetics compliance', hint: 'Personal care framing' },
+  { label: 'Export-ready', hint: 'Packaging & logistics' },
+];
+---
+
+<section class="border-y border-slate-200 bg-white py-8">
+  <div class="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+    {items.map((item) => (
+      <div class="flex items-start gap-3 rounded-xl bg-brand-50/60 px-4 py-3">
+        <span class="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white">✓</span>
+        <div>
+          <p class="text-sm font-semibold text-slate-900">{item.label}</p>
+          <p class="text-xs text-slate-600">{item.hint}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

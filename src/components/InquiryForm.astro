@@ -1,0 +1,171 @@
+---
+interface Props {
+  id?: string;
+  title?: string;
+  subtitle?: string;
+  defaultBuyerType?: string;
+  defaultProduct?: string;
+}
+
+const {
+  id = 'inquiry-form',
+  title = 'Request a quote',
+  subtitle = 'Tell us your program needs — we typically reply within ~24 hours on business days.',
+  defaultBuyerType = '',
+  defaultProduct = 'HOCl spray',
+} = Astro.props;
+---
+
+<section id={id} class="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6">
+    <div class="text-center">
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">Inquiry</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{title}</h2>
+      <p class="mt-3 text-slate-600">{subtitle}</p>
+    </div>
+
+    <form
+      data-inquiry-form
+      class="mt-10 space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
+      method="post"
+      action="/api/inquiry"
+    >
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label for="name" class="block text-sm font-medium text-slate-700">Name <span class="text-red-500">*</span></label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name"
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-slate-700">Email <span class="text-red-500">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
+        </div>
+      </div>
+
+      <div>
+        <label for="company" class="block text-sm font-medium text-slate-700">Company</label>
+        <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company / brand name"
+          class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label for="buyerType" class="block text-sm font-medium text-slate-700">Buyer type <span class="text-red-500">*</span></label>
+          <select id="buyerType" name="buyerType" required value={defaultBuyerType}
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20">
+            <option value="" disabled={!!defaultBuyerType}>Select…</option>
+            <option value="OEM / Private Label">OEM / Private Label</option>
+            <option value="Wholesale">Wholesale</option>
+            <option value="Both / Exploring">Both / Exploring</option>
+            <option value="Salon / Spa">Salon / Spa</option>
+            <option value="Retailer">Retailer</option>
+            <option value="Distributor">Distributor</option>
+          </select>
+        </div>
+        <div>
+          <label for="productInterest" class="block text-sm font-medium text-slate-700">Product interest <span class="text-red-500">*</span></label>
+          <select id="productInterest" name="productInterest" required value={defaultProduct}
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20">
+            <option value="HOCl spray">HOCl spray (hero)</option>
+            <option value="HOCl spray + packaging only">HOCl spray + packaging only</option>
+            <option value="HOCl + side SKUs (PDRN etc.)">HOCl + side SKUs (PDRN etc.)</option>
+            <option value="Other / discuss">Other / discuss</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label for="quantity" class="block text-sm font-medium text-slate-700">Quantity / MOQ notes</label>
+          <input id="quantity" name="quantity" type="text" placeholder="e.g. sample, 500 pcs, 5,000+/mo"
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
+        </div>
+        <div>
+          <label for="country" class="block text-sm font-medium text-slate-700">Destination country</label>
+          <input id="country" name="country" type="text" autocomplete="country-name" placeholder="e.g. United States"
+            class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
+        </div>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+        <textarea id="message" name="message" rows="4"
+          placeholder="Concentration target, bottle size, private-label artwork, timeline, compliance markets…"
+          class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"></textarea>
+      </div>
+
+      <label class="flex items-start gap-2 text-sm text-slate-600">
+        <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+        <span>I agree to be contacted by Clearion Labs about this OEM / wholesale inquiry. Cosmetics / personal care inquiries only.</span>
+      </label>
+
+      <button type="submit"
+        class="w-full rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 sm:w-auto">
+        Submit Inquiry
+      </button>
+
+      <p data-form-status class="hidden text-sm" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.querySelector('[data-inquiry-form]') as HTMLFormElement | null;
+  const statusEl = document.querySelector('[data-form-status]') as HTMLElement | null;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const payload: Record<string, string> = {};
+    fd.forEach((v, k) => {
+      payload[k] = String(v);
+    });
+    payload.submittedAt = new Date().toISOString();
+    payload.source = window.location.pathname;
+
+    try {
+      localStorage.setItem('clearion_inquiry_last', JSON.stringify(payload));
+      console.info('[clearion inquiry]', payload);
+
+      // Prefer Pages Function if present; fall back to mailto
+      let ok = false;
+      try {
+        const res = await fetch('/api/inquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        ok = res.ok;
+      } catch {
+        ok = false;
+      }
+
+      if (!ok) {
+        const subject = encodeURIComponent(`Clearion Labs inquiry — ${payload.buyerType || 'B2B'}`);
+        const body = encodeURIComponent(
+          Object.entries(payload)
+            .map(([k, v]) => `${k}: ${v}`)
+            .join('\n'),
+        );
+        window.location.href = `mailto:inquiries@clearionlabs.example?subject=${subject}&body=${body}`;
+      }
+
+      if (statusEl) {
+        statusEl.classList.remove('hidden', 'text-red-600');
+        statusEl.classList.add('text-brand-700');
+        statusEl.textContent = ok
+          ? 'Thanks — your inquiry was received. We typically reply within ~24 hours on business days.'
+          : 'Opening your email client as a fallback. You can also email inquiries@clearionlabs.example.';
+      }
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      if (statusEl) {
+        statusEl.classList.remove('hidden', 'text-brand-700');
+        statusEl.classList.add('text-red-600');
+        statusEl.textContent = 'Something went wrong. Please email inquiries@clearionlabs.example.';
+      }
+    }
+  });
+</script>
