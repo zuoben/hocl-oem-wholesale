@@ -1,3 +1,12 @@
+# Cloudflare Workers static assets (not Pages).
+# Do not set pages_build_output_dir (that makes wrangler treat this as Pages).
 name = "clearion-labs"
-compatibility_date = "2025-09-01"
-pages_build_output_dir = "dist"
+compatibility_date = "2026-09-22"
+
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
+html_handling = "drop-trailing-slash"
+not_found_handling = "404-page"
