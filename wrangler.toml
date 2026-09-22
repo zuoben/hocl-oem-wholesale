@@ -1,6 +1,6 @@
 # Cloudflare Workers static assets (not Pages).
 # Do not set pages_build_output_dir (that makes wrangler treat this as Pages).
-name = "clearion-labs"
+name = "hocl-oem-wholesale"
 compatibility_date = "2026-09-22"
 
 [build]

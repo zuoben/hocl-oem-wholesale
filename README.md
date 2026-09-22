@@ -1,12 +1,15 @@
-# Clearion Labs
+# HOCl OEM & Wholesale (Clearion Labs)
 
-Lean Astro + Tailwind site for **HOCl (hypochlorous acid) spray OEM / private label and wholesale** (B2B, US English). Temporary brand name.
+Lean Astro + Tailwind B2B site for **HOCl (hypochlorous acid) spray OEM / private label and wholesale** (US English).
+
+- **Repo / Worker name:** `hocl-oem-wholesale`
+- **Brand (copy):** Clearion Labs (temporary)
 
 ## Stack
 
 - Astro (static output)
 - Tailwind CSS v4 (`@tailwindcss/vite`)
-- Cloudflare Pages (`wrangler.toml` + optional `functions/api/inquiry.ts`)
+- Cloudflare Workers static assets (`wrangler.toml`)
 
 ## Pages
 
@@ -33,24 +36,18 @@ npm run build
 # output → dist/
 ```
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Workers)
 
 ```bash
-npx wrangler login   # if needed
-npx wrangler pages deploy dist --project-name=clearion-labs
+# CLOUDFLARE_API_TOKEN or `npx wrangler login`
+npm run deploy
+# equivalent: npm run build && npx wrangler deploy
 ```
 
-Or connect the GitHub repo in the Cloudflare dashboard (build command `npm run build`, output `dist`).
+Worker name: `hocl-oem-wholesale` (see `wrangler.toml`).
 
-The optional Pages Function at `functions/api/inquiry.ts` accepts `POST` JSON and returns `200`. The contact form uses `data-inquiry-form`, tries `/api/inquiry`, then falls back to `mailto:` + `localStorage`.
+## Notes
 
-## Compliance
-
-Cosmetics / personal care framing only. No disease treatment claims. No FDA-cleared drug/device wording for these products.
-
-## Follow-ups
-
-- Real brand name & logo
-- Replace `inquiries@clearionlabs.example`
-- Custom domain
-- Wire CRM/email on the inquiry function (secrets via Cloudflare)
+- Cosmetics / personal care only — no disease treatment claims, no FDA-cleared drug/device wording.
+- Replace `inquiries@clearionlabs.example` before go-live.
+- Form posts to `/api/inquiry` (Pages/Workers Function) with mailto + localStorage fallback.
