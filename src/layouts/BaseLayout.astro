@@ -15,6 +15,9 @@ const {
 
 const siteName = 'Clearion Labs';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+const site = Astro.site ?? new URL('https://hocl.tradeglo.net');
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const canonicalUrl = canonical ?? new URL(path === '/' ? '/' : path, site).href;
 ---
 
 <!doctype html>
@@ -25,11 +28,12 @@ const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="canonical" href={canonicalUrl} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
+    <meta property="og:url" content={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

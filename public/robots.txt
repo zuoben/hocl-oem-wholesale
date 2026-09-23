@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hocl.tradeglo.net/sitemap-index.xml

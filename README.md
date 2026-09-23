@@ -3,6 +3,7 @@
 Lean Astro + Tailwind B2B site for **HOCl (hypochlorous acid) spray OEM / private label and wholesale** (US English).
 
 - **Repo / Worker name:** `hocl-oem-wholesale`
+- **Production URL:** https://hocl.tradeglo.net
 - **Brand (copy):** Clearion Labs (temporary)
 
 ## Stack
@@ -45,6 +46,7 @@ npm run deploy
 ```
 
 Worker name: `hocl-oem-wholesale` (see `wrangler.toml`).
+Custom domain: `hocl.tradeglo.net` (bound via `[[routes]]` on deploy).
 
 ## Notes
 

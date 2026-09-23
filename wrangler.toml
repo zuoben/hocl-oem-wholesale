@@ -10,3 +10,9 @@ command = "npm run build"
 directory = "./dist"
 html_handling = "drop-trailing-slash"
 not_found_handling = "404-page"
+
+# Custom domain (applied on `wrangler deploy` once CLOUDFLARE_API_TOKEN is set).
+# Requires tradeglo.net zone on the same Cloudflare account.
+[[routes]]
+pattern = "hocl.tradeglo.net"
+custom_domain = true
