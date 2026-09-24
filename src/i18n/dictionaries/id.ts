@@ -137,7 +137,7 @@ const id: LocaleDictionary = {
     },
   },
   home: {
-    title: "Skincare Private Label & Pabrikan HOCl | OEM & Grosir",
+    title: "HOCl OEM & Grosir Skincare",
     description: "Clearion Labs — skincare private label dan pabrikan HOCl untuk spray asam hipoklorit grade kosmetik. OEM / private label dan grosir untuk salon, retailer, dan distributor. Sampel dulu.",
     badge: "B2B · OEM kosmetik · Fokus pasar AS",
     h1a: "OEM & grosir spray HOCl",
@@ -189,7 +189,7 @@ const id: LocaleDictionary = {
     formTitle: "Dapatkan penawaran gaya pabrik",
   },
   oem: {
-    title: "Skincare Private Label · Pabrikan HOCl OEM",
+    title: "HOCl Private Label OEM",
     description: "OEM skincare private label dan pabrikan HOCl untuk spray wajah asam hipoklorit. RFQ konsentrasi, kemasan, sampling untuk merek dan lini salon. Hanya kosmetik / perawatan pribadi.",
     kicker: "OEM / Private Label",
     h1: "Merek Anda di spray HOCl — dari sampel ke rak",
@@ -271,7 +271,7 @@ const id: LocaleDictionary = {
     formTitle: "RFQ OEM / private label",
   },
   wholesale: {
-    title: "Grosir Spray HOCl | Pasokan Skincare Bulk",
+    title: "Grosir Spray HOCl",
     description: "Grosir spray HOCl dan mist wajah asam hipoklorit grade kosmetik bulk untuk salon, retailer, dan distributor. Akun terbuka, daftar harga, dan pertanyaan MOQ.",
     kicker: "Grosir",
     h1: "Spray HOCl bulk untuk pembeli komersial",
@@ -326,7 +326,7 @@ const id: LocaleDictionary = {
     formTitle: "Permintaan grosir / akun terbuka",
   },
   contact: {
-    title: "Kontak / Minta Penawaran",
+    title: "Kontak / Penawaran",
     description: "Hubungi Clearion Labs untuk penawaran OEM, private label, dan grosir spray HOCl. Sampel dulu. Balasan tipikal dalam ~24 jam.",
     h1: "Hubungi kami",
     lead: "RFQ gaya pabrik untuk OEM dan grosir spray HOCl. Hanya pertanyaan kosmetik / perawatan pribadi.",
@@ -378,6 +378,12 @@ const id: LocaleDictionary = {
       "Clearion Labs (“kami”) mengoperasikan situs ini untuk menerima pertanyaan B2B tentang OEM, private label, dan grosir spray HOCl. Saat Anda mengirim formulir, kami mengumpulkan informasi yang Anda berikan (seperti nama, email, perusahaan, jenis pembeli, dan pesan) untuk menanggapi permintaan Anda.",
       "Data formulir dapat disimpan di browser Anda (localStorage) untuk konfirmasi dan/atau dikirim ke endpoint atau email kami. Kami tidak menjual informasi pribadi. Jangan kirim informasi kesehatan sensitif — situs ini hanya untuk pertanyaan B2B kosmetik / perawatan pribadi.",
       "Untuk permintaan privasi, email <strong>inquiries@clearionlabs.example</strong> (placeholder — ganti sebelum produksi).",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "Penafian kosmetik:",
     disclaimerBody: "Produk yang dibahas di situs ini dimaksudkan sebagai kosmetik / perawatan pribadi. Bukan obat dan tidak dimaksudkan untuk mendiagnosis, mengobati, menyembuhkan, atau mencegah penyakit.",
@@ -391,6 +397,12 @@ const id: LocaleDictionary = {
       "Dengan menggunakan situs Clearion Labs ini, Anda setuju bahwa konten disediakan untuk tujuan informasi B2B umum tentang OEM dan grosir spray HOCl kosmetik / perawatan pribadi. Penawaran, MOQ, lead time, dan spesifikasi hanya dikonfirmasi secara tertulis setelah tinjauan permintaan.",
       "Informasi produk (termasuk konsentrasi atau pH bila disebutkan) bersifat deskriptif untuk formulasi kosmetik dan bukan klaim medis. Anda bertanggung jawab memastikan pemasaran dan pelabelan Anda mematuhi hukum di pasar tujuan.",
       "“Clearion Labs” adalah nama merek sementara untuk situs v1 ini. Halaman harga atau katalog dapat berubah tanpa pemberitahuan hingga penawaran formal diterbitkan.",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "Penafian kosmetik:",
     disclaimerBody: "Produk Clearion Labs adalah kosmetik / perawatan pribadi (mis. mist pembersih wajah dan spray kulit harian). Tidak dimaksudkan untuk mendiagnosis, mengobati, menyembuhkan, atau mencegah penyakit. Tidak ada klaim obat atau alat FDA-cleared untuk produk ini di situs ini.",

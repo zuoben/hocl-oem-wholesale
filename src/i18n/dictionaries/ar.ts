@@ -137,7 +137,7 @@ const ar: LocaleDictionary = {
     },
   },
   home: {
-    title: "علامة تجارية خاصة للعناية بالبشرة ومصنع HOCl | OEM وبالجملة",
+    title: "HOCl OEM والجملة للعناية بالبشرة",
     description: "Clearion Labs — علامة خاصة للعناية بالبشرة ومصنع HOCl لرذاذ حمض الهيبوكلوروس من فئة مستحضرات التجميل. OEM / العلامة الخاصة والبيع بالجملة للصالونات وتجار التجزئة والموزعين. العينة أولا.",
     badge: "B2B · مستحضرات التجميل OEM · التركيز على السوق الأمريكية",
     h1a: "HOCl رش OEM والجملة",
@@ -154,7 +154,7 @@ const ar: LocaleDictionary = {
     oemLink: "استكشاف OEM →",
     wholesaleBadge: "بالجملة",
     wholesaleTitle: "البيع بالجملة / فتح حساب",
-    wholesaleBody: "رذاذ بالجملة HOCl لسلاسل الصالونات وتجار التجزئة والموزعين. قوائم الأسعار، و\"18\" مستوى، وإمدادات صديقة للتجديد.",
+    wholesaleBody: "رذاذ بالجملة HOCl لسلاسل الصالونات وتجار التجزئة والموزعين. قوائم الأسعار، وMOQ مستوى، وإمدادات صديقة للتجديد.",
     wholesaleLink: "استكشاف الجملة →",
     productsTitle: "تشكيلة المنتجات",
     productsTagline: "البطل + وحدات SKU الجانبية",
@@ -189,7 +189,7 @@ const ar: LocaleDictionary = {
     formTitle: "احصل على عرض أسعار على غرار المصنع",
   },
   oem: {
-    title: "العناية بالبشرة ذات العلامة التجارية الخاصة · HOCl الشركة المصنعة OEM",
+    title: "HOCl OEM علامة خاصة",
     description: "الشركة المصنعة للعناية بالبشرة ذات العلامة الخاصة OEM وHOCl لرذاذ الوجه بحمض هيبوكلوروس. التركيز والتعبئة وأخذ العينات RFQ للعلامات التجارية وخطوط الصالونات. مستحضرات التجميل / العناية الشخصية فقط.",
     kicker: "OEM / تسمية خاصة",
     h1: "علامتك التجارية على رذاذ HOCl — من العينة إلى الرف",
@@ -271,7 +271,7 @@ const ar: LocaleDictionary = {
     formTitle: "OEM / العلامة الخاصة RFQ",
   },
   wholesale: {
-    title: "الجملة HOCl بخاخ | توريد منتجات العناية بالبشرة ذات العلامة الخاصة بالجملة",
+    title: "جملة رذاذ HOCl",
     description: "الجملة HOCl رذاذ الوجه ومستحضرات التجميل السائبة من حمض هيبوكلوروس للصالونات وتجار التجزئة والموزعين. فتح الحساب وقائمة الأسعار والاستعلام MOQ.",
     kicker: "بالجملة",
     h1: "رذاذ بالجملة HOCl للمشترين التجاريين",
@@ -290,7 +290,7 @@ const ar: LocaleDictionary = {
       },
       {
         t: "MOQ الشفافية",
-        d: "\"18\" على أساس كرتوني من SKU؛ حزم العينة متاحة قبل الالتزام.",
+        d: "MOQ على أساس كرتوني من SKU؛ حزم العينة متاحة قبل الالتزام.",
       },
     ],
     channelTitle: "مصممة للصالونات وقنوات البيع بالتجزئة",
@@ -326,7 +326,7 @@ const ar: LocaleDictionary = {
     formTitle: "البيع بالجملة/الاستعلام عن الحساب المفتوح",
   },
   contact: {
-    title: "الاتصال / طلب عرض أسعار",
+    title: "اتصل / اطلب عرض سعر",
     description: "اتصل بـClearion Labs للحصول على HOCl بخاخ OEM وملصق خاص وعروض أسعار بالجملة. العينة أولا. الرد عادةً خلال 24 ساعة تقريبًا.",
     h1: "اتصل بنا",
     lead: "طراز المصنع RFQ لـ HOCl رش OEM وبالجملة. مستحضرات التجميل / الاستفسارات العناية الشخصية فقط.",
@@ -345,7 +345,7 @@ const ar: LocaleDictionary = {
       {
         t: "بالجملة",
         d: "قائمة الأسعار MOQ ومحادثات الحساب المفتوح للمشترين بالجملة.",
-        href: "/بالجملة",
+        href: "/wholesale",
       },
       {
         t: "احتياطي البريد الإلكتروني",
@@ -378,6 +378,12 @@ const ar: LocaleDictionary = {
       "Clearion Labs («نحن») تدير هذا الموقع لتلقي استفسارات B2B حول HOCl بخاخ OEM والعلامة الخاصة والبيع بالجملة. عند إرسال نموذج الاستفسار، نقوم بجمع المعلومات التي تقدمها (مثل الاسم والبريد الإلكتروني والشركة ونوع المشتري والرسالة) للرد على طلبك.",
       "قد يتم تخزين بيانات النموذج في متصفحك (التخزين المحلي) للتأكيد و/أو إرسالها إلى نقطة نهاية الاستفسار أو البريد الإلكتروني. نحن لا نبيع المعلومات الشخصية. لا ترسل معلومات صحية حساسة - هذا الموقع مخصص لاستفسارات مستحضرات التجميل / العناية الشخصية B2B فقط.",
       "لطلبات الخصوصية، أرسل بريدًا إلكترونيًا إلى <strong>inquiries@clearionlabs.example</strong> (عنصر نائب - استبدل قبل الإنتاج).",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "إخلاء المسؤولية عن مستحضرات التجميل:",
     disclaimerBody: "المنتجات التي تمت مناقشتها في هذا الموقع مخصصة لمستحضرات التجميل / العناية الشخصية. إنها ليست أدوية وليس المقصود منها تشخيص أي مرض أو علاجه أو علاجه أو الوقاية منه.",
@@ -388,9 +394,15 @@ const ar: LocaleDictionary = {
     h1: "شروط الاستخدام",
     updated: "آخر تحديث: 22 سبتمبر 2026 · ركيزة أساسية لإطلاق الإصدار الأول",
     paragraphs: [
-      "باستخدام هذا الموقع Clearion Labs، فإنك توافق على أن المحتوى يتم توفيره لأغراض معلوماتية عامة بين الشركات حول مستحضرات التجميل / العناية الشخصية HOCl والرذاذ OEM والبيع بالجملة. يتم تأكيد عروض الأسعار و\"18\" والمهل الزمنية والمواصفات كتابيًا فقط بعد مراجعة الاستفسار.",
+      "باستخدام هذا الموقع Clearion Labs، فإنك توافق على أن المحتوى يتم توفيره لأغراض معلوماتية عامة بين الشركات حول مستحضرات التجميل / العناية الشخصية HOCl والرذاذ OEM والبيع بالجملة. يتم تأكيد عروض الأسعار وMOQ والمهل الزمنية والمواصفات كتابيًا فقط بعد مراجعة الاستفسار.",
       "معلومات المنتج (بما في ذلك التركيز أو الرقم الهيدروجيني حيثما تم ذكرها) هي معلومات وصفية لتركيبات مستحضرات التجميل وليست مطالبة طبية. أنت مسؤول عن ضمان امتثال التسويق ووضع العلامات الخاصة بك للقوانين في الأسواق التي تقصدها.",
       "\"Clearion Labs\" هو اسم علامة تجارية مؤقتة يستخدم لموقع v1 هذا. قد تتغير صفحات أو كتالوجات الأسعار دون إشعار حتى يتم إصدار عرض أسعار رسمي.",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "إخلاء المسؤولية عن مستحضرات التجميل:",
     disclaimerBody: "منتجات Clearion Labs هي مستحضرات تجميل / عناية شخصية (مثل رذاذ تنظيف الوجه وبخاخات البشرة اليومية). وليس المقصود منها تشخيص المرض أو علاجه أو علاجه أو الوقاية منه. لا توجد مطالبات بخصوص أدوية أو أجهزة تمت الموافقة عليها من قبل إدارة الغذاء والدواء (FDA) بخصوص هذه المنتجات على هذا الموقع.",

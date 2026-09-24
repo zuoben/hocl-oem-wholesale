@@ -137,7 +137,7 @@ const ru: LocaleDictionary = {
     },
   },
   home: {
-    title: "Частная торговая марка по уходу за кожей и производитель HOCl | OEM и опт",
+    title: "HOCl OEM и опт уход за кожей",
     description: "Clearion Labs — частная торговая марка по уходу за кожей и HOCl производитель косметического спрея на основе хлорноватистой кислоты. OEM / СТМ и оптовая продажа для салонов, ритейлеров и дистрибьюторов. Сначала образец.",
     badge: "B2B · Косметика OEM · Фокус на рынке США",
     h1a: "HOCl спрей OEM и оптом",
@@ -145,7 +145,7 @@ const ru: LocaleDictionary = {
     lead: "Clearion Labs — это частная торговая марка по уходу за кожей и партнер-производитель HOCl косметических спреев для лица на основе хлорноватистой кислоты — упаковка под частной торговой маркой, варианты фасовки и оптовая продажа, готовая к экспорту. Артикул дополнительного ассортимента доступен для обсуждения на RFQ.",
     ctaOem: "OEM / Частная торговая марка",
     ctaWholesale: "Оптовая торговля",
-    orRfq: "Или <a href=\"{rfq}» class=\"text-link\">отправьте структурированное предложение RFQ</a> — предложение обычно занимает около 24 часов.",
+    orRfq: "Или <a href=\"{rfq}\" class=\"text-link\">отправьте структурированное предложение RFQ</a> — предложение обычно занимает около 24 часов.",
     funnelKicker: "Два способа покупки",
     funnelTitle: "Выберите программу, которая подходит",
     oemBadge: "OEM",
@@ -175,11 +175,11 @@ const ru: LocaleDictionary = {
       },
       {
         title: "Поддерживаете ли вы частную торговую марку и оптовую продажу?",
-        description: "Да. Выберите <a href=\"{oem}» class=\"text-link\">OEM / Private Label </a> для фирменной упаковки и характеристик рецептуры или <a href=\"{wholesale}» class=\"text-link»>Оптовая продажа </a> для оптовых поставок в салоны, розничные торговцы и дистрибьюторы.",
+        description: "Да. Выберите <a href=\"{oem}\" class=\"text-link\">OEM / Private Label </a> для фирменной упаковки и характеристик рецептуры или <a href=\"{wholesale}\" class=\"text-link\">Оптовая продажа </a> для оптовых поставок в салоны, розничные торговцы и дистрибьюторы.",
       },
       {
         title: "Могу ли я получить образцы перед запуском производства?",
-        description: "Наш рекомендуемый путь — «Сначала выборка». Укажите размер бутылки, место назначения и любые предпочтительные характеристики в <a href=\"{rfq}» class=\"text-link\">форме запроса </a>. Обсудите концентрацию &amp; pH, как указано в характеристиках RFQ.",
+        description: "Наш рекомендуемый путь — «Сначала выборка». Укажите размер бутылки, место назначения и любые предпочтительные характеристики в <a href=\"{rfq}\" class=\"text-link\">форме запроса </a>. Обсудите концентрацию &amp; pH, как указано в характеристиках RFQ.",
       },
       {
         title: "Являются ли эти продукты лекарствами или медицинскими приборами?",
@@ -189,7 +189,7 @@ const ru: LocaleDictionary = {
     formTitle: "Получите ценовое предложение в заводском стиле",
   },
   oem: {
-    title: "Частная торговая марка по уходу за кожей · HOCl Производитель OEM",
+    title: "HOCl OEM частная марка",
     description: "Частная торговая марка производителя средств по уходу за кожей OEM и HOCl спрея для лица с хлорноватистой кислотой. Концентрация, упаковка, отбор проб RFQ для брендов и салонных линий. Только косметика/уход за собой.",
     kicker: "OEM / Частная торговая марка",
     h1: "Ваш бренд на спрее HOCl — от образца до полки",
@@ -271,7 +271,7 @@ const ru: LocaleDictionary = {
     formTitle: "OEM / частная торговая марка RFQ",
   },
   wholesale: {
-    title: "Спрей HOCl оптом | Массовые поставки средств по уходу за кожей под частной торговой маркой",
+    title: "Опт спрей HOCl",
     description: "Спрей HOCl оптом и косметический спрей для лица на основе гипохлористой кислоты оптом для салонов, розничной торговли и дистрибьюторов. Открыть счет, прайс-лист и запрос MOQ.",
     kicker: "Оптовая торговля",
     h1: "Объемный спрей HOCl для коммерческих покупателей.",
@@ -312,7 +312,7 @@ const ru: LocaleDictionary = {
       },
       {
         title: "Как мне получить прайс-лист?",
-        description: "Отправьте оптовый запрос <a href=\"#inquiry-form\" class=\"text-link\"> </a> с указанием страны назначения и предполагаемого ежемесячного объема. Мы делимся уровнями MOQ и примерными вариантами. Мы не публикуем на этом сайте фиксированные цены за единицу продукции.",
+        description: "Отправьте <a href=\"#inquiry-form\" class=\"text-link\">оптовый запрос</a> с указанием страны назначения и предполагаемого ежемесячного объема. Мы делимся уровнями MOQ и вариантами образцов. Мы не публикуем на этом сайте фиксированные цены за единицу продукции.",
       },
       {
         title: "Что такое типичный MOQ?",
@@ -320,13 +320,13 @@ const ru: LocaleDictionary = {
       },
       {
         title: "Могут ли оптовые аккаунты позже перейти на частную торговую марку?",
-        description: "Да. Многие партнеры начинают оптовую торговлю, а затем, как только спрос подтвердится, переводят упаковку на фирменную OEM. См. <a href=\"{oem}» class=\"text-link\">OEM / Частная торговая марка </a>.",
+        description: "Да. Многие партнеры начинают оптовую торговлю, а затем, как только спрос подтвердится, переводят упаковку на фирменную OEM. См. <a href=\"{oem}\" class=\"text-link\">OEM / Частная торговая марка </a>.",
       },
     ],
     formTitle: "Оптовая торговля / запрос на открытие счета",
   },
   contact: {
-    title: "Контакт / Запросить предложение",
+    title: "Контакт / Запрос цены",
     description: "Свяжитесь с Clearion Labs, чтобы узнать о спрее HOCl, частной торговой марке и оптовых ценах. Сначала образец. Ответ обычно в течение ~ 24 часов.",
     h1: "Связаться с нами",
     lead: "Заводской образец RFQ для HOCl, спрей OEM и оптом. Только вопросы по косметике/уходу за собой.",
@@ -340,12 +340,12 @@ const ru: LocaleDictionary = {
       {
         t: "OEM / Частная торговая марка",
         d: "Концентрирование, упаковка и отбор проб RFQ для фирменного спрея HOCl.",
-        href: "/ОЕМ",
+        href: "/oem",
       },
       {
         t: "Оптовая торговля",
         d: "Прайс-лист MOQ и открытый диалог для оптовых покупателей.",
-        href: "/оптовая торговля",
+        href: "/wholesale",
       },
       {
         t: "Резервный адрес электронной почты",
@@ -378,6 +378,12 @@ const ru: LocaleDictionary = {
       "Clearion Labs («мы») управляет этим веб-сайтом для получения запросов B2B о спрее HOCl, OEM, частной торговой марке и оптовой торговле. Когда вы отправляете форму запроса, мы собираем предоставленную вами информацию (например, имя, адрес электронной почты, компанию, тип покупателя и сообщение), чтобы ответить на ваш запрос.",
       "Данные формы могут быть сохранены в вашем браузере (localStorage) для подтверждения и/или отправлены на нашу конечную точку запроса или по электронной почте. Мы не продаем личную информацию. Не отправляйте конфиденциальную медицинскую информацию — этот сайт предназначен только для запросов B2B о косметике и средствах личной гигиены.",
       "По вопросам конфиденциальности пишите по электронной почте <strong> inquiries@clearionlabs.example </strong> (заполнитель — замените перед производством).",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "Отказ от косметики:",
     disclaimerBody: "Продукты, обсуждаемые на этом сайте, предназначены для косметики/ухода за собой. Они не являются лекарствами и не предназначены для диагностики, лечения или предотвращения каких-либо заболеваний.",
@@ -391,6 +397,12 @@ const ru: LocaleDictionary = {
       "Используя этот сайт Clearion Labs, вы соглашаетесь с тем, что контент предоставлен для общих информационных целей B2B о косметике/уходе за собой HOCl, спрее OEM и оптовой торговле. Ценовые предложения, MOQ, сроки выполнения и технические характеристики подтверждаются только в письменном виде после рассмотрения запроса.",
       "Информация о продукте (включая концентрацию или pH, если таковые имеются) описывает составы косметических средств и не является медицинским заявлением. Вы несете ответственность за обеспечение соответствия вашего маркетинга и маркировки законам на рынках назначения.",
       "Clearion Labs — это временное название бренда, используемое для этой версии сайта v1. Страницы с ценами или каталоги могут изменяться без предварительного уведомления до тех пор, пока не будет опубликовано официальное предложение.",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "Отказ от косметики:",
     disclaimerBody: "Продукты Clearion Labs — это косметика/средства личной гигиены (например, очищающие спреи для лица и ежедневные спреи для кожи). Они не предназначены для диагностики, лечения или предотвращения заболеваний. На этом сайте в отношении этих продуктов не делается никаких заявлений о лекарствах или устройствах, одобренных FDA.",

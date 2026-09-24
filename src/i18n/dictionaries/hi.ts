@@ -38,9 +38,9 @@ const hi: LocaleDictionary = {
     productInterest: "उत्पाद रुचि",
     productHocl: "HOCl स्प्रे (हीरो)",
     productPackaging: "केवल ''15'' स्प्रे + पैकेजिंग",
-    productSide: "«15'' + साइड एसकेयू (''16'' आदि)",
+    productSide: "«15'' + साइड एसकेयू ('PDRN' आदि)",
     productOther: "अन्य/चर्चा",
-    quantity: "मात्रा / \"18\" नोट",
+    quantity: "मात्रा / MOQ नोट",
     quantityPh: "जैसे नमूना, 500 पीसी, 5,000+/महीना",
     country: "गंतव्य देश",
     countryPh: "जैसे संयुक्त राज्य अमेरिका",
@@ -137,7 +137,7 @@ const hi: LocaleDictionary = {
     },
   },
   home: {
-    title: "निजी लेबल स्किनकेयर और HOCl निर्माता | OEM एवं थोक",
+    title: "HOCl OEM और थोक स्किनकेयर",
     description: "\"4\" - निजी लेबल स्किनकेयर और सौंदर्य प्रसाधन-ग्रेड हाइपोक्लोरस एसिड स्प्रे के लिए \"15\" निर्माता। OEM / सैलून, खुदरा विक्रेताओं और वितरकों के लिए निजी लेबल और थोक। नमूना-प्रथम.",
     badge: "बी2बी · सौंदर्य प्रसाधन OEM · अमेरिकी बाजार फोकस",
     h1a: "\"15\" स्प्रे \"19\" और थोक",
@@ -154,7 +154,7 @@ const hi: LocaleDictionary = {
     oemLink: "एक्सप्लोर करें OEM →",
     wholesaleBadge: "थोक",
     wholesaleTitle: "थोक/खाता खोलें",
-    wholesaleBody: "सैलून श्रृंखलाओं, खुदरा विक्रेताओं और वितरकों के लिए थोक \"15\" स्प्रे। मूल्य सूचियाँ, \"18\" स्तर, और पुनःपूर्ति-अनुकूल आपूर्ति।",
+    wholesaleBody: "सैलून श्रृंखलाओं, खुदरा विक्रेताओं और वितरकों के लिए थोक \"15\" स्प्रे। मूल्य सूचियाँ, MOQ स्तर, और पुनःपूर्ति-अनुकूल आपूर्ति।",
     wholesaleLink: "थोक का अन्वेषण करें →",
     productsTitle: "उत्पाद वर्गीकरण",
     productsTagline: "हीरो + साइड SKU",
@@ -171,7 +171,7 @@ const hi: LocaleDictionary = {
     faqItems: [
       {
         title: "आपका हीरो उत्पाद क्या है?",
-        description: "सौंदर्य प्रसाधनों/व्यक्तिगत देखभाल के लिए हाइपोक्लोरस एसिड (`6''15''7'') चेहरे की धुंध - दैनिक चेहरे की सफाई करने वाली धुंध और त्वचा की देखभाल करने वाला स्प्रे। विशिष्ट खुदरा आकार ~60-120`10»मिली; यात्रा ~20\"10\"एमएल कार्ड/मिनी स्प्रे। साइड एसकेयू ('16' + पेप्टाइड सीरम, जेली क्रीम, मिल्क टोनर/मिल्की लोशन) एक द्वितीयक वर्गीकरण हैं - ''17'' पर चर्चा करें।",
+        description: "सौंदर्य प्रसाधनों/व्यक्तिगत देखभाल के लिए हाइपोक्लोरस एसिड (HOCl) चेहरे की धुंध - दैनिक चेहरे की सफाई करने वाली धुंध और त्वचा की देखभाल करने वाला स्प्रे। विशिष्ट खुदरा आकार ~60-120&nbsp;मिली; यात्रा ~20\"10\"एमएल कार्ड/मिनी स्प्रे। साइड एसकेयू (PDRN + पेप्टाइड सीरम, जेली क्रीम, मिल्क टोनर/मिल्की लोशन) एक द्वितीयक वर्गीकरण हैं - RFQ पर चर्चा करें।",
       },
       {
         title: "क्या आप निजी लेबल और थोक का समर्थन करते हैं?",
@@ -189,7 +189,7 @@ const hi: LocaleDictionary = {
     formTitle: "फ़ैक्टरी-शैली का उद्धरण प्राप्त करें",
   },
   oem: {
-    title: "प्राइवेट लेबल स्किनकेयर · \"15\" निर्माता \"19\"",
+    title: "HOCl प्राइवेट लेबल OEM",
     description: "हाइपोक्लोरस एसिड फेशियल स्प्रे के लिए निजी लेबल स्किनकेयर \"19\" और \"15\" निर्माता। ब्रांडों और सैलून लाइनों के लिए एकाग्रता, पैकेजिंग, नमूनाकरण RFQ। केवल सौंदर्य प्रसाधन/व्यक्तिगत देखभाल।",
     kicker: "OEM / निजी लेबल",
     h1: "\"15\" स्प्रे पर आपका ब्रांड - नमूने से लेकर शेल्फ तक",
@@ -256,8 +256,8 @@ const hi: LocaleDictionary = {
         description: "विशिष्ट लीवर: प्रकट विनिर्देशों के अनुसार एकाग्रता / पीएच, भरने की मात्रा (खुदरा ~ 60-120 \"10\" एमएल या यात्रा ~ 20 \"10\" एमएल), बोतल \"9\" एक्चुएटर, लेबल \"9\" कार्टन कलाकृति, और आंतरिक / बाहरी पैकेजिंग। पैकेजिंग मार्गदर्शन के लिए अपना लक्ष्य चैनल (सैलून बनाम रिटेल) साझा करें।",
       },
       {
-        title: "क्या निजी लेबल से पहले कोई उच्च \"18\" है?",
-        description: "पायलट और नमूने छोटे से शुरू कर सकते हैं; ब्रांडेड बड़े पैमाने पर उत्पादन \"18\" पैकेजिंग जटिलता पर निर्भर करता है। हमें \"17\" पर अपना लॉन्च नंबर बताएं।",
+        title: "क्या निजी लेबल से पहले कोई उच्च MOQ है?",
+        description: "पायलट और नमूने छोटे से शुरू कर सकते हैं; ब्रांडेड बड़े पैमाने पर उत्पादन MOQ पैकेजिंग जटिलता पर निर्भर करता है। हमें \"17\" पर अपना लॉन्च नंबर बताएं।",
       },
       {
         title: "क्या आप सौंदर्य प्रसाधन लेबलिंग भाषा में मदद करते हैं?",
@@ -265,17 +265,17 @@ const hi: LocaleDictionary = {
       },
       {
         title: "PDRN या अन्य पक्ष SKU के बारे में क्या?",
-        description: "\"15\" फेशियल मिस्ट हीरो है। साइड वर्गीकरण ('16' + पेप्टाइड सीरम, जेली क्रीम, मिल्क टोनर / मिल्की लोशन) को वर्गीकरण योजना के लिए निजी-लेबल किया जा सकता है - यदि प्रासंगिक हो तो पूछताछ फॉर्म पर पूछें।",
+        description: "\"15\" फेशियल मिस्ट हीरो है। साइड वर्गीकरण (PDRN + पेप्टाइड सीरम, जेली क्रीम, मिल्क टोनर / मिल्की लोशन) को वर्गीकरण योजना के लिए निजी-लेबल किया जा सकता है - यदि प्रासंगिक हो तो पूछताछ फॉर्म पर पूछें।",
       },
     ],
     formTitle: "\"19\" / निजी लेबल \"17\"",
   },
   wholesale: {
-    title: "थोक HOCl स्प्रे | थोक निजी लेबल स्किनकेयर आपूर्ति",
-    description: "सैलून, खुदरा विक्रेताओं और वितरकों के लिए थोक \"15\" स्प्रे और थोक सौंदर्य प्रसाधन-ग्रेड हाइपोक्लोरस एसिड फेशियल मिस्ट। खाता खोलें, मूल्य सूची, और \"18\" पूछताछ।",
+    title: "थोक HOCl स्प्रे",
+    description: "सैलून, खुदरा विक्रेताओं और वितरकों के लिए थोक \"15\" स्प्रे और थोक सौंदर्य प्रसाधन-ग्रेड हाइपोक्लोरस एसिड फेशियल मिस्ट। खाता खोलें, मूल्य सूची, और MOQ पूछताछ।",
     kicker: "थोक",
     h1: "वाणिज्यिक खरीदारों के लिए थोक \"15\" स्प्रे",
-    lead: "कॉस्मेटिक्स-ग्रेड हाइपोक्लोरस एसिड फेशियल स्प्रे के लिए एक थोक वार्तालाप खोलें - वॉल्यूम टियर द्वारा मूल्य सूची, \"18\" स्पष्टता, और पुनःपूर्ति-अनुकूल आपूर्ति।",
+    lead: "कॉस्मेटिक्स-ग्रेड हाइपोक्लोरस एसिड फेशियल स्प्रे के लिए एक थोक वार्तालाप खोलें - वॉल्यूम टियर द्वारा मूल्य सूची, MOQ स्पष्टता, और पुनःपूर्ति-अनुकूल आपूर्ति।",
     ctaPrice: "मूल्य सूची का अनुरोध करें",
     ctaOem: "निजी लेबल की आवश्यकता है?",
     highlightsTitle: "थोक कार्यक्रम पर प्रकाश डाला गया",
@@ -303,7 +303,7 @@ const hi: LocaleDictionary = {
     ],
     productsTitle: "थोक-तैयार प्रारूप",
     productsTagline: "वर्गीकरण",
-    productsIntro: "प्रारूप आमतौर पर थोक भागीदारों के साथ चर्चा की जाती है। HOCl फेशियल मिस्ट प्रमुख है; साइड SKU द्वितीयक हैं और \"17\" पर जोड़ने के लिए उपलब्ध हैं। कोई प्रकाशित इकाई मूल्य या निश्चित ऑफ़र के रूप में \"18\"।",
+    productsIntro: "प्रारूप आमतौर पर थोक भागीदारों के साथ चर्चा की जाती है। HOCl फेशियल मिस्ट प्रमुख है; साइड SKU द्वितीयक हैं और \"17\" पर जोड़ने के लिए उपलब्ध हैं। कोई प्रकाशित इकाई मूल्य या निश्चित ऑफ़र के रूप में MOQ।",
     faqTitle: "थोक अक्सर पूछे जाने वाले प्रश्न",
     faqItems: [
       {
@@ -312,10 +312,10 @@ const hi: LocaleDictionary = {
       },
       {
         title: "मुझे मूल्य सूची कैसे मिलेगी?",
-        description: "गंतव्य देश और अनुमानित मासिक मात्रा के साथ \"14\"थोक पूछताछ\"8\" सबमिट करें। हम \"18\" स्तर और नमूना विकल्प साझा करते हैं। हम इस साइट पर निश्चित इकाई मूल्य प्रकाशित नहीं करते हैं।",
+        description: "गंतव्य देश और अनुमानित मासिक मात्रा के साथ \"14\"थोक पूछताछ\"8\" सबमिट करें। हम MOQ स्तर और नमूना विकल्प साझा करते हैं। हम इस साइट पर निश्चित इकाई मूल्य प्रकाशित नहीं करते हैं।",
       },
       {
-        title: "एक विशिष्ट \"18\" क्या है?",
+        title: "एक विशिष्ट MOQ क्या है?",
         description: "MOQ SKU और पैकेजिंग पर निर्भर करता है। नमूना पैक पहले उपलब्ध हैं; कार्टन मात्रा के साथ थोक टियर स्केल। सटीक उत्तर के लिए फॉर्म में अपना लक्ष्य शामिल करें।",
       },
       {
@@ -326,7 +326,7 @@ const hi: LocaleDictionary = {
     formTitle: "थोक/खुले खाते की पूछताछ",
   },
   contact: {
-    title: "संपर्क करें/कोटेशन के लिए अनुरोध करें",
+    title: "संपर्क / कोटेशन",
     description: "\"15\" स्प्रे \"19\", निजी लेबल और थोक उद्धरण के लिए \"4\" से संपर्क करें। नमूना-प्रथम. आम तौर पर ~24 घंटे के भीतर उत्तर दें।",
     h1: "हमसे संपर्क करें",
     lead: "फ़ैक्टरी-शैली \"17\" के लिए \"15\" स्प्रे \"19\" और थोक। केवल सौंदर्य प्रसाधन/व्यक्तिगत देखभाल संबंधी पूछताछ।",
@@ -340,12 +340,12 @@ const hi: LocaleDictionary = {
       {
         t: "OEM / निजी लेबल",
         d: "ब्रांडेड \"15\" स्प्रे के लिए एकाग्रता, पैकेजिंग और नमूनाकरण \"17\"।",
-        href: "/ओईएम",
+        href: "/oem",
       },
       {
         t: "थोक",
-        d: "मूल्य सूची, \"18\", और थोक खरीदारों के लिए ओपन-अकाउंट वार्तालाप।",
-        href: "/थोक",
+        d: "मूल्य सूची, MOQ, और थोक खरीदारों के लिए ओपन-अकाउंट वार्तालाप।",
+        href: "/wholesale",
       },
       {
         t: "ईमेल फ़ॉलबैक",
@@ -378,6 +378,12 @@ const hi: LocaleDictionary = {
       "Clearion Labs (\"हम\") इस वेबसाइट को \"15\" स्प्रे \"19\", निजी लेबल और थोक के बारे में बी2बी पूछताछ प्राप्त करने के लिए संचालित करते हैं। जब आप पूछताछ फ़ॉर्म जमा करते हैं, तो हम आपके अनुरोध का जवाब देने के लिए आपके द्वारा प्रदान की गई जानकारी (जैसे नाम, ईमेल, कंपनी, खरीदार का प्रकार और संदेश) एकत्र करते हैं।",
       "पुष्टि के लिए फॉर्म डेटा आपके ब्राउज़र (लोकलस्टोरेज) में संग्रहीत किया जा सकता है और/या हमारे पूछताछ समापन बिंदु या ईमेल पर भेजा जा सकता है। हम व्यक्तिगत जानकारी नहीं बेचते हैं. संवेदनशील स्वास्थ्य जानकारी सबमिट न करें - यह साइट केवल सौंदर्य प्रसाधन/व्यक्तिगत देखभाल B2B पूछताछ के लिए है।",
       "गोपनीयता अनुरोधों के लिए, ईमेल करें \"6\" \"5\" \"7\" (प्लेसहोल्डर - उत्पादन से पहले बदलें)।",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "सौंदर्य प्रसाधन अस्वीकरण:",
     disclaimerBody: "इस साइट पर चर्चा किए गए उत्पाद सौंदर्य प्रसाधन/व्यक्तिगत देखभाल के रूप में हैं। वे दवाएं नहीं हैं और उनका उद्देश्य किसी बीमारी का निदान, उपचार, इलाज या रोकथाम करना नहीं है।",
@@ -388,9 +394,15 @@ const hi: LocaleDictionary = {
     h1: "उपयोग की शर्तें",
     updated: "अंतिम अद्यतन: 22 सितंबर, 2026 · v1 लॉन्च के लिए स्टब",
     paragraphs: [
-      "इस \"4\" वेबसाइट का उपयोग करके, आप सहमत हैं कि सामग्री सौंदर्य प्रसाधन / व्यक्तिगत देखभाल \"15\" स्प्रे \"19\" और थोक के बारे में सामान्य बी2बी सूचनात्मक उद्देश्यों के लिए प्रदान की गई है। उद्धरण, \"18\", लीड समय और विशिष्टताओं की पुष्टि केवल पूछताछ समीक्षा के बाद लिखित रूप में की जाती है।",
+      "इस \"4\" वेबसाइट का उपयोग करके, आप सहमत हैं कि सामग्री सौंदर्य प्रसाधन / व्यक्तिगत देखभाल \"15\" स्प्रे \"19\" और थोक के बारे में सामान्य बी2बी सूचनात्मक उद्देश्यों के लिए प्रदान की गई है। उद्धरण, MOQ, लीड समय और विशिष्टताओं की पुष्टि केवल पूछताछ समीक्षा के बाद लिखित रूप में की जाती है।",
       "उत्पाद जानकारी (जहां उल्लेखित एकाग्रता या पीएच सहित) सौंदर्य प्रसाधन फॉर्मूलेशन का वर्णनात्मक है और यह कोई चिकित्सीय दावा नहीं है। आप यह सुनिश्चित करने के लिए जिम्मेदार हैं कि आपकी मार्केटिंग और लेबलिंग आपके गंतव्य बाजारों में कानूनों का अनुपालन करती है।",
       "''4'' इस v1 साइट के लिए उपयोग किया जाने वाला एक अस्थायी ब्रांड नाम है। औपचारिक उद्धरण जारी होने तक मूल्य निर्धारण पृष्ठ या कैटलॉग बिना किसी सूचना के बदल सकते हैं।",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "सौंदर्य प्रसाधन अस्वीकरण:",
     disclaimerBody: "\"4\" उत्पाद सौंदर्य प्रसाधन/व्यक्तिगत देखभाल हैं (उदाहरण के लिए चेहरे की सफाई करने वाली मिस्ट और दैनिक त्वचा स्प्रे)। उनका उद्देश्य बीमारी का निदान, उपचार, इलाज या रोकथाम करना नहीं है। इस साइट पर इन उत्पादों के लिए कोई FDA-स्वीकृत दवा या उपकरण का दावा नहीं किया गया है।",

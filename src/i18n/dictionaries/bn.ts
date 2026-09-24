@@ -137,7 +137,7 @@ const bn: LocaleDictionary = {
     },
   },
   home: {
-    title: "ব্যক্তিগত লেবেল স্কিনকেয়ার এবং HOCl প্রস্তুতকারক | OEM এবং পাইকারি",
+    title: "HOCl OEM ও পাইকারি স্কিনকেয়ার",
     description: "Clearion Labs — ব্যক্তিগত লেবেল স্কিনকেয়ার এবং প্রসাধনী-গ্রেড হাইপোক্লোরাস অ্যাসিড স্প্রে জন্য HOCl প্রস্তুতকারক। OEM / সেলুন, খুচরা বিক্রেতা এবং পরিবেশকদের জন্য ব্যক্তিগত লেবেল এবং পাইকারি। নমুনা-প্রথম।",
     badge: "B2B · প্রসাধনী OEM · মার্কিন বাজার ফোকাস",
     h1a: "HOCl স্প্রে OEM এবং পাইকারি",
@@ -189,7 +189,7 @@ const bn: LocaleDictionary = {
     formTitle: "একটি কারখানা-শৈলী উদ্ধৃতি পান",
   },
   oem: {
-    title: "ব্যক্তিগত লেবেল স্কিনকেয়ার · HOCl প্রস্তুতকারক OEM",
+    title: "HOCl প্রাইভেট লেবেল OEM",
     description: "হাইপোক্লোরাস অ্যাসিড ফেসিয়াল স্প্রে জন্য ব্যক্তিগত লেবেল স্কিনকেয়ার OEM এবং HOCl প্রস্তুতকারক। ব্র্যান্ড এবং সেলুন লাইনের জন্য ঘনত্ব, প্যাকেজিং, নমুনা RFQ। প্রসাধনী / ব্যক্তিগত যত্ন শুধুমাত্র.",
     kicker: "OEM / ব্যক্তিগত লেবেল",
     h1: "আপনার ব্র্যান্ড HOCl স্প্রে - নমুনা থেকে তাক পর্যন্ত",
@@ -271,7 +271,7 @@ const bn: LocaleDictionary = {
     formTitle: "\"19\" / ব্যক্তিগত লেবেল \"17\"",
   },
   wholesale: {
-    title: "পাইকারি HOCl স্প্রে | বাল্ক প্রাইভেট লেবেল স্কিনকেয়ার সাপ্লাই",
+    title: "পাইকারি HOCl স্প্রে",
     description: "সেলুন, খুচরা বিক্রেতা এবং পরিবেশকদের জন্য পাইকারি HOCl স্প্রে এবং বাল্ক প্রসাধনী-গ্রেড হাইপোক্লোরাস অ্যাসিড ফেসিয়াল মিস্ট। অ্যাকাউন্ট খুলুন, মূল্য তালিকা, এবং MOQ অনুসন্ধান.",
     kicker: "পাইকারি",
     h1: "বাল্ক HOCl বাণিজ্যিক ক্রেতাদের জন্য স্প্রে",
@@ -326,7 +326,7 @@ const bn: LocaleDictionary = {
     formTitle: "পাইকারি / খোলা অ্যাকাউন্ট অনুসন্ধান",
   },
   contact: {
-    title: "যোগাযোগ / একটি উদ্ধৃতি অনুরোধ",
+    title: "যোগাযোগ / উদ্ধৃতি",
     description: "যোগাযোগ Clearion Labs জন্য HOCl স্প্রে OEM, ব্যক্তিগত লেবেল, এবং পাইকারি উদ্ধৃতি. নমুনা-প্রথম। সাধারণত ~24 ঘন্টার মধ্যে উত্তর দিন।",
     h1: "আমাদের সাথে যোগাযোগ করুন",
     lead: "কারখানা-শৈলী RFQ জন্য HOCl স্প্রে OEM এবং পাইকারি. প্রসাধনী / ব্যক্তিগত যত্ন অনুসন্ধান শুধুমাত্র.",
@@ -345,7 +345,7 @@ const bn: LocaleDictionary = {
       {
         t: "পাইকারি",
         d: "মূল্য তালিকা, MOQ, এবং বাল্ক ক্রেতাদের জন্য খোলা অ্যাকাউন্ট কথোপকথন।",
-        href: "/পাইকারি",
+        href: "/wholesale",
       },
       {
         t: "ইমেল ফলব্যাক",
@@ -378,6 +378,12 @@ const bn: LocaleDictionary = {
       "Clearion Labs (\"আমরা\") \"15\" স্প্রে OEM, ব্যক্তিগত লেবেল এবং পাইকারি সম্পর্কে B2B অনুসন্ধানগুলি পেতে এই ওয়েবসাইটটি পরিচালনা করে। আপনি যখন তদন্তের ফর্ম জমা দেন, তখন আপনার অনুরোধে সাড়া দেওয়ার জন্য আমরা আপনার দেওয়া তথ্য (যেমন নাম, ইমেল, কোম্পানি, ক্রেতার ধরন এবং বার্তা) সংগ্রহ করি।",
       "ফর্ম ডেটা নিশ্চিতকরণের জন্য আপনার ব্রাউজারে (স্থানীয় স্টোরেজ) সংরক্ষণ করা হতে পারে এবং/অথবা আমাদের অনুসন্ধানের শেষ পয়েন্ট বা ইমেলে পাঠানো হতে পারে। আমরা ব্যক্তিগত তথ্য বিক্রি করি না। সংবেদনশীল স্বাস্থ্য তথ্য জমা দেবেন না — এই সাইটটি শুধুমাত্র প্রসাধনী / ব্যক্তিগত যত্ন B2B অনুসন্ধানের জন্য।",
       "গোপনীয়তার অনুরোধের জন্য, ইমেল <strong>inquiries@clearionlabs.example</strong> (প্লেসহোল্ডার — উৎপাদনের আগে প্রতিস্থাপন করুন)।",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "প্রসাধনী দাবিত্যাগ:",
     disclaimerBody: "এই সাইটে আলোচিত পণ্যগুলি প্রসাধনী / ব্যক্তিগত যত্ন হিসাবে উদ্দিষ্ট। এগুলি ওষুধ নয় এবং কোনও রোগ নির্ণয়, চিকিত্সা, নিরাময় বা প্রতিরোধ করার উদ্দেশ্যে নয়।",
@@ -391,6 +397,12 @@ const bn: LocaleDictionary = {
       "এই Clearion Labs ওয়েবসাইট ব্যবহার করে, আপনি সম্মত হন যে সামগ্রী প্রসাধনী / ব্যক্তিগত যত্ন HOCl স্প্রে OEM এবং পাইকারি সম্পর্কে সাধারণ B2B তথ্যের উদ্দেশ্যে সরবরাহ করা হয়েছে। উদ্ধৃতি, MOQ, সীসা সময়, এবং স্পেসিফিকেশন শুধুমাত্র তদন্ত পর্যালোচনার পরে লিখিতভাবে নিশ্চিত করা হয়।",
       "পণ্যের তথ্য (উল্লেখিত ঘনত্ব বা pH সহ) প্রসাধনী ফর্মুলেশনের বর্ণনামূলক এবং এটি একটি চিকিৎসা দাবি নয়। আপনার নিজের মার্কেটিং এবং লেবেলিং আপনার গন্তব্য বাজারের আইন মেনে চলা নিশ্চিত করার জন্য আপনি দায়ী।",
       "\"Clearion Labs\" এই v1 সাইটের জন্য ব্যবহৃত একটি অস্থায়ী ব্র্যান্ড নাম। একটি আনুষ্ঠানিক উদ্ধৃতি জারি না হওয়া পর্যন্ত মূল্য নির্ধারণের পৃষ্ঠা বা ক্যাটালগ নোটিশ ছাড়াই পরিবর্তিত হতে পারে।",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "প্রসাধনী দাবিত্যাগ:",
     disclaimerBody: "Clearion Labs পণ্য হল প্রসাধনী/ব্যক্তিগত যত্ন (যেমন ফেসিয়াল ক্লিনজিং মিস্ট এবং প্রতিদিনের ত্বকের স্প্রে)। এগুলি রোগ নির্ণয়, চিকিত্সা, নিরাময় বা প্রতিরোধ করার উদ্দেশ্যে নয়। এই সাইটে এই পণ্যগুলির জন্য কোনও এফডিএ-ক্লিয়ারড ড্রাগ বা ডিভাইস দাবি করা হয় না।",

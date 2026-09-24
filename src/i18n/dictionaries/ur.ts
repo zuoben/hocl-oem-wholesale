@@ -137,7 +137,7 @@ const ur: LocaleDictionary = {
     },
   },
   home: {
-    title: "پرائیویٹ لیبل سکن کیئر اور HOCl مینوفیکچرر | OEM اور تھوک",
+    title: "HOCl OEM اور تھوک سکن کیئر",
     description: "Clearion Labs — پرائیویٹ لیبل سکن کیئر اور کاسمیٹکس گریڈ ہائپوکلورس ایسڈ سپرے کے لیے HOCl بنانے والا۔ OEM / سیلون، خوردہ فروشوں اور تقسیم کاروں کے لیے نجی لیبل اور تھوک۔ نمونہ - پہلے۔",
     badge: "B2B · کاسمیٹکس OEM · امریکی مارکیٹ فوکس",
     h1a: "HOCl سپرے OEM اور ہول سیل",
@@ -189,7 +189,7 @@ const ur: LocaleDictionary = {
     formTitle: "فیکٹری طرز کا اقتباس حاصل کریں۔",
   },
   oem: {
-    title: "پرائیویٹ لیبل سکن کیئر · HOCl مینوفیکچرر OEM",
+    title: "HOCl پرائیویٹ لیبل OEM",
     description: "ہائپوکلورس ایسڈ فیشل سپرے کے لیے پرائیویٹ لیبل سکن کیئر OEM اور HOCl بنانے والا۔ ارتکاز، پیکیجنگ، نمونے لینے RFQ برانڈز اور سیلون لائنوں کے لئے. کاسمیٹکس / صرف ذاتی نگہداشت۔",
     kicker: "OEM / نجی لیبل",
     h1: "آپ کا برانڈ HOCl سپرے پر — نمونے سے شیلف تک",
@@ -271,7 +271,7 @@ const ur: LocaleDictionary = {
     formTitle: "OEM / نجی لیبل RFQ",
   },
   wholesale: {
-    title: "تھوک HOCl سپرے | بلک پرائیویٹ لیبل سکن کیئر سپلائی",
+    title: "تھوک HOCl سپرے",
     description: "سیلونز، خوردہ فروشوں اور تقسیم کاروں کے لیے تھوک HOCl سپرے اور بلک کاسمیٹکس گریڈ ہائپوکلورس ایسڈ فیشل مسٹ۔ اکاؤنٹ کھولیں، قیمت کی فہرست، اور MOQ انکوائری.",
     kicker: "تھوک",
     h1: "تجارتی خریداروں کے لیے بلک HOCl سپرے",
@@ -289,7 +289,7 @@ const ur: LocaleDictionary = {
         d: "نمونہ کی منظوری → پہلا PO → اہل خریداروں کے لیے دوبارہ بھرتی۔",
       },
       {
-        t: "\"18\" شفافیت",
+        t: "MOQ شفافیت",
         d: "SKU کی طرف سے کارٹن پر مبنی MOQ؛ وابستگی سے پہلے دستیاب نمونہ پیک۔",
       },
     ],
@@ -326,7 +326,7 @@ const ur: LocaleDictionary = {
     formTitle: "تھوک / کھلے اکاؤنٹ کی انکوائری",
   },
   contact: {
-    title: "رابطہ کریں / اقتباس کی درخواست کریں۔",
+    title: "رابطہ / اقتباس",
     description: "HOCl سپرے OEM، پرائیویٹ لیبل اور ہول سیل قیمتوں کے لیے Clearion Labs سے رابطہ کریں۔ نمونہ - پہلے۔ عام طور پر ~ 24 گھنٹے کے اندر جواب دیں۔",
     h1: "ہم سے رابطہ کریں۔",
     lead: "فیکٹری سٹائل RFQ کے لیے HOCl سپرے OEM اور ہول سیل۔ صرف کاسمیٹکس / ذاتی نگہداشت سے متعلق پوچھ گچھ۔",
@@ -345,7 +345,7 @@ const ur: LocaleDictionary = {
       {
         t: "تھوک",
         d: "قیمت کی فہرست، MOQ، اور بلک خریداروں کے لیے کھلے اکاؤنٹ کی گفتگو۔",
-        href: "/تھوک",
+        href: "/wholesale",
       },
       {
         t: "ای میل فال بیک",
@@ -378,6 +378,12 @@ const ur: LocaleDictionary = {
       "Clearion Labs (\"ہم\") اس ویب سائٹ کو HOCl سپرے OEM، پرائیویٹ لیبل، اور ہول سیل کے بارے میں B2B استفسارات حاصل کرنے کے لیے چلاتا ہے۔ جب آپ انکوائری فارم جمع کراتے ہیں، تو ہم آپ کی درخواست کا جواب دینے کے لیے آپ کی فراہم کردہ معلومات (جیسے نام، ای میل، کمپنی، خریدار کی قسم، اور پیغام) جمع کرتے ہیں۔",
       "فارم کا ڈیٹا تصدیق کے لیے آپ کے براؤزر (لوکل اسٹوریج) میں اسٹور کیا جا سکتا ہے اور/یا ہمارے انکوائری اینڈ پوائنٹ یا ای میل پر بھیجا جا سکتا ہے۔ ہم ذاتی معلومات فروخت نہیں کرتے ہیں۔ صحت کی حساس معلومات جمع نہ کریں - یہ سائٹ صرف کاسمیٹکس / ذاتی نگہداشت B2B پوچھ گچھ کے لیے ہے۔",
       "رازداری کی درخواستوں کے لیے، ای میل <strong>inquiries@clearionlabs.example</strong> (پلیس ہولڈر — پروڈکشن سے پہلے تبدیل کریں)۔",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "کاسمیٹکس ڈس کلیمر:",
     disclaimerBody: "اس سائٹ پر زیر بحث مصنوعات کا مقصد کاسمیٹکس / ذاتی نگہداشت کے طور پر ہیں۔ وہ دوائیں نہیں ہیں اور ان کا مقصد کسی بیماری کی تشخیص، علاج، علاج یا روک تھام کرنا نہیں ہے۔",
@@ -391,6 +397,12 @@ const ur: LocaleDictionary = {
       "اس Clearion Labs ویب سائٹ کو استعمال کرکے، آپ اس بات سے اتفاق کرتے ہیں کہ کاسمیٹکس/ذاتی نگہداشت HOCl سپرے OEM اور ہول سیل کے بارے میں B2B معلوماتی مقاصد کے لیے مواد فراہم کیا جاتا ہے۔ اقتباسات، MOQ، لیڈ ٹائم، اور وضاحتیں صرف انکوائری کے جائزے کے بعد تحریری طور پر تصدیق کی جاتی ہیں۔",
       "مصنوعات کی معلومات (بشمول ارتکاز یا pH جہاں ذکر کیا گیا ہے) کاسمیٹکس فارمولیشنز کی وضاحتی ہے اور یہ طبی دعوی نہیں ہے۔ آپ اپنی مارکیٹنگ اور لیبلنگ کو اپنی منزل کی منڈیوں میں قوانین کی تعمیل کو یقینی بنانے کے ذمہ دار ہیں۔",
       "\"Clearion Labs\" ایک عارضی برانڈ نام ہے جو اس v1 سائٹ کے لیے استعمال ہوتا ہے۔ قیمتوں کا تعین کرنے والے صفحات یا کیٹلاگ بغیر اطلاع کے تبدیل ہو سکتے ہیں جب تک کہ باضابطہ کوٹیشن جاری نہیں ہو جاتا۔",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "کاسمیٹکس ڈس کلیمر:",
     disclaimerBody: "Clearion Labs مصنوعات کاسمیٹکس / ذاتی نگہداشت ہیں (مثلاً چہرے کو صاف کرنے والی دھندیں اور روزانہ جلد کے اسپرے)۔ ان کا مقصد بیماری کی تشخیص، علاج، علاج یا روک تھام کرنا نہیں ہے۔ اس سائٹ پر ان پروڈکٹس کے لیے ایف ڈی اے سے کلیئر شدہ دوا یا ڈیوائس کے دعوے نہیں کیے گئے ہیں۔",

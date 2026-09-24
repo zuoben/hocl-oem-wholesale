@@ -137,15 +137,17 @@ const vi: LocaleDictionary = {
     },
   },
   home: {
-    title: "Nhãn hiệu riêng Chăm sóc da & Nhà sản xuất HOCl | OEM & Bán buôn",
+    title: "HOCl OEM & Bán buôn skincare",
     description: "Clearion Labs — nhãn hiệu chăm sóc da riêng và nhà sản xuất HOCl sản phẩm xịt axit hypochlorous cấp mỹ phẩm. OEM / nhãn hiệu riêng và bán buôn cho các salon, nhà bán lẻ và nhà phân phối. Mẫu đầu tiên.",
+
     badge: "B2B · Mỹ phẩm OEM · Tập trung vào thị trường Mỹ",
     h1a: "HOCl phun OEM & bán buôn",
     h1b: "dành cho các salon, cửa hàng bán lẻ và nhà phân phối",
-    lead: "«4' là một nhãn hiệu chăm sóc da riêng và là đối tác sản xuất của nhà sản xuất «15' cho thuốc xịt mặt axit hypochlorous cấp mỹ phẩm - đóng gói nhãn hiệu riêng, tùy chọn chiết rót và bán buôn sẵn sàng xuất khẩu. Các SKU phân loại phụ có sẵn để thảo luận trên RFQ.",
+    lead: "Clearion Labs là đối tác nhãn hiệu riêng và nhà sản xuất HOCl cho xịt mặt axit hypochlorous cấp mỹ phẩm — bao bì nhãn riêng, tùy chọn chiết rót và bán buôn sẵn sàng xuất khẩu. SKU phụ có thể thảo luận trên RFQ.",
+
     ctaOem: "OEM / Nhãn hiệu riêng",
     ctaWholesale: "Bán buôn",
-    orRfq: "Hoặc <a href=\" {rfq}\" class=\"text-link\">gửi cấu trúc RFQ </a> — trích dẫn thường trong vòng ~24 giờ.",
+    orRfq: "Hoặc <a href=\"{rfq}\" class=\"text-link\">gửi RFQ có cấu trúc</a> — báo giá thường trong vòng ~24 giờ.",
     funnelKicker: "Hai cách để mua",
     funnelTitle: "Chọn chương trình phù hợp",
     oemBadge: "OEM",
@@ -171,15 +173,15 @@ const vi: LocaleDictionary = {
     faqItems: [
       {
         title: "Sản phẩm anh hùng của bạn là gì?",
-        description: "Axit hypochlorous (<6» HOCl </strong>) xịt khoáng dành cho mỹ phẩm / chăm sóc cá nhân — xịt làm sạch da mặt hàng ngày và xịt chăm sóc da. Kích thước bán lẻ thông thường ~60–120 &nbsp;ml; du lịch ~20 &nbsp;ml thẻ/xịt xịt nhỏ. SKU phụ (<16> + huyết thanh peptide, kem thạch, nước hoa hồng / sữa dưỡng) là loại thứ cấp - thảo luận về RFQ.",
+        description: "Axit hypochlorous (<strong>HOCl</strong>) xịt khoáng dành cho mỹ phẩm / chăm sóc cá nhân — xịt làm sạch da mặt hàng ngày và xịt chăm sóc da. Kích thước bán lẻ thông thường ~60–120 &nbsp;ml; du lịch ~20 &nbsp;ml thẻ/xịt xịt nhỏ. SKU phụ (PDRN + huyết thanh peptide, kem thạch, nước hoa hồng / sữa dưỡng) là loại thứ cấp - thảo luận về RFQ.",
       },
       {
         title: "Bạn có hỗ trợ nhãn hiệu riêng và bán buôn không?",
-        description: "Đúng. Chọn <a href=\"\"0\" class=\"text-link\">><19» / Nhãn hiệu riêng </a> để biết thông số kỹ thuật về công thức và bao bì có thương hiệu hoặc <a href=\"\"1\"\" class=\"text-link\">Bán buôn\"8\" để cung cấp số lượng lớn cho các thẩm mỹ viện, nhà bán lẻ và nhà phân phối.",
+        description: "Đúng. Chọn <a href=\"{oem}\" class=\"text-link\">OEM / Nhãn hiệu riêng</a> để biết thông số kỹ thuật về công thức và bao bì có thương hiệu hoặc <a href=\"{wholesale}\" class=\"text-link\">Bán buôn</a> để cung cấp số lượng lớn cho các thẩm mỹ viện, nhà bán lẻ và nhà phân phối.",
       },
       {
         title: "Tôi có thể lấy mẫu trước khi sản xuất không?",
-        description: "Mẫu đầu tiên là đường dẫn được đề xuất của chúng tôi. Chia sẻ kích thước chai, điểm đến và bất kỳ thông số kỹ thuật ưa thích nào trên <a href=\"\"2\"\" class=\"text-link\">mẫu yêu cầu\"8\". Thảo luận về nồng độ &amp; pH như thông số kỹ thuật được tiết lộ trên RFQ.",
+        description: "Mẫu trước là đường dẫn được chúng tôi đề xuất. Chia sẻ kích thước chai, điểm đến và thông số ưa thích trên <a href=\"{rfq}\" class=\"text-link\">biểu mẫu yêu cầu</a>. Thảo luận nồng độ &amp; pH như thông số được tiết lộ trên RFQ.",
       },
       {
         title: "Những sản phẩm này là thuốc hay thiết bị y tế?",
@@ -189,7 +191,7 @@ const vi: LocaleDictionary = {
     formTitle: "Nhận báo giá kiểu nhà máy",
   },
   oem: {
-    title: "Chăm sóc da nhãn hiệu riêng · HOCl Nhà sản xuất OEM",
+    title: "HOCl nhãn riêng OEM",
     description: "Nhà sản xuất nhãn hiệu riêng chăm sóc da OEM và HOCl cho xịt dưỡng da mặt axit hypochlorous. Tập trung, đóng gói, lấy mẫu RFQ cho các nhãn hiệu và dòng sản phẩm thẩm mỹ viện. Chỉ mỹ phẩm / chăm sóc cá nhân.",
     kicker: "OEM / Nhãn hiệu riêng",
     h1: "Thương hiệu của bạn trên bình xịt HOCl — từ mẫu đến kệ",
@@ -256,7 +258,7 @@ const vi: LocaleDictionary = {
         description: "Đòn bẩy điển hình: nồng độ / pH như thông số kỹ thuật được tiết lộ, thể tích đổ đầy (bán lẻ ~60–120 &nbsp;ml hoặc du lịch ~20 &nbsp;ml), bộ truyền động chai &amp;, tác phẩm nghệ thuật thùng carton nhãn &amp; và bao bì bên trong/bên ngoài. Chia sẻ kênh mục tiêu của bạn (salon và bán lẻ) để được hướng dẫn đóng gói.",
       },
       {
-        title: "Có mức \"18\" cao trước nhãn hiệu riêng không?",
+        title: "Có mức MOQ cao trước nhãn hiệu riêng không?",
         description: "Phi công và mẫu có thể bắt đầu nhỏ hơn; Sản xuất hàng loạt mang nhãn hiệu MOQ phụ thuộc vào độ phức tạp của bao bì. Hãy cho chúng tôi biết số lượng phát hành của bạn trên RFQ.",
       },
       {
@@ -265,13 +267,13 @@ const vi: LocaleDictionary = {
       },
       {
         title: "Thế còn PDRN hoặc các SKU bên kia thì sao?",
-        description: "HOCl Facial Mist là anh hùng. Các loại phụ (<16> + huyết thanh peptide, kem thạch, nước hoa hồng / sữa dưỡng) có thể được dán nhãn riêng để lập kế hoạch phân loại - hãy hỏi trên biểu mẫu yêu cầu nếu có liên quan.",
+        description: "HOCl Facial Mist là anh hùng. Các loại phụ (PDRN + huyết thanh peptide, kem thạch, nước hoa hồng / sữa dưỡng) có thể được dán nhãn riêng để lập kế hoạch phân loại - hãy hỏi trên biểu mẫu yêu cầu nếu có liên quan.",
       },
     ],
     formTitle: "OEM / nhãn hiệu riêng RFQ",
   },
   wholesale: {
-    title: "Bán buôn HOCl Xịt | Cung cấp sản phẩm chăm sóc da nhãn hiệu riêng số lượng lớn",
+    title: "Bán buôn xịt HOCl",
     description: "Bán buôn xịt khoáng HOCl và xịt khoáng dành cho da mặt chứa axit hypochlorous cấp mỹ phẩm số lượng lớn cho các thẩm mỹ viện, nhà bán lẻ và nhà phân phối. Mở tài khoản, bảng giá và yêu cầu MOQ.",
     kicker: "Bán buôn",
     h1: "Xịt số lượng lớn HOCl dành cho người mua thương mại",
@@ -312,7 +314,7 @@ const vi: LocaleDictionary = {
       },
       {
         title: "Làm thế nào để tôi có được một bảng giá?",
-        description: "Gửi yêu cầu bán buôn <a href=\"#inquiry-form\" class=\"text-link\">8» với quốc gia đến và khối lượng ước tính hàng tháng. Chúng tôi chia sẻ các cấp độ MOQ và các tùy chọn mẫu. Chúng tôi không công bố đơn giá cố định trên trang web này.",
+        description: "Gửi <a href=\"#inquiry-form\" class=\"text-link\">yêu cầu bán buôn</a> với quốc gia đến và khối lượng ước tính hàng tháng. Chúng tôi chia sẻ các cấp độ MOQ và các tùy chọn mẫu. Chúng tôi không công bố đơn giá cố định trên trang web này.",
       },
       {
         title: "MOQ điển hình là gì?",
@@ -320,14 +322,15 @@ const vi: LocaleDictionary = {
       },
       {
         title: "Tài khoản bán buôn có thể chuyển sang nhãn hiệu riêng sau này không?",
-        description: "Đúng. Nhiều đối tác bắt đầu bán buôn, sau đó chuyển sang đóng gói nhãn hiệu “19” khi nhu cầu đã được chứng minh. Xem <a href=\" {oem}\" class=\"text-link\">><19» / Nhãn hiệu riêng </a>.",
+        description: "Đúng. Nhiều đối tác bắt đầu bán buôn, sau đó chuyển sang đóng gói nhãn hiệu riêng khi nhu cầu đã được chứng minh. Xem <a href=\"{oem}\" class=\"text-link\">OEM / Nhãn hiệu riêng</a>.",
       },
     ],
     formTitle: "Bán buôn / yêu cầu mở tài khoản",
   },
   contact: {
-    title: "Liên hệ / Yêu cầu báo giá",
-    description: "Liên hệ “4” để có bình xịt “15” “19”, nhãn hiệu riêng và báo giá sỉ. Mẫu đầu tiên. Trả lời thường trong vòng ~ 24 giờ.",
+    title: "Liên hệ / Báo giá",
+    description: "Liên hệ Clearion Labs để nhận báo giá OEM, nhãn hiệu riêng và bán buôn xịt HOCl. Mẫu trước. Thường trả lời trong khoảng ~24 giờ.",
+
     h1: "Liên hệ với chúng tôi",
     lead: "Kiểu nhà máy RFQ dành cho bình xịt HOCl OEM và bán buôn. Chỉ yêu cầu về mỹ phẩm / chăm sóc cá nhân.",
     pills: [
@@ -345,7 +348,7 @@ const vi: LocaleDictionary = {
       {
         t: "Bán buôn",
         d: "Bảng giá, MOQ và cuộc trò chuyện mở tài khoản cho người mua số lượng lớn.",
-        href: "/bán buôn",
+        href: "/wholesale",
       },
       {
         t: "Dự phòng email",
@@ -378,6 +381,12 @@ const vi: LocaleDictionary = {
       "Clearion Labs (“chúng tôi”) vận hành trang web này để nhận các yêu cầu B2B về HOCl bình xịt OEM, nhãn hiệu riêng và bán buôn. Khi bạn gửi biểu mẫu yêu cầu, chúng tôi sẽ thu thập thông tin bạn cung cấp (chẳng hạn như tên, email, công ty, loại người mua và tin nhắn) để đáp ứng yêu cầu của bạn.",
       "Dữ liệu biểu mẫu có thể được lưu trữ trong trình duyệt của bạn (localStorage) để xác nhận và/hoặc gửi đến điểm cuối yêu cầu hoặc email của chúng tôi. Chúng tôi không bán thông tin cá nhân. Không gửi thông tin sức khỏe nhạy cảm - trang web này chỉ dành cho các yêu cầu B2B về mỹ phẩm / chăm sóc cá nhân.",
       "Đối với các yêu cầu về quyền riêng tư, hãy gửi email <strong> inquiries@clearionlabs.example </strong> (giữ chỗ - thay thế trước khi sản xuất).",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "Tuyên bố từ chối trách nhiệm về mỹ phẩm:",
     disclaimerBody: "Các sản phẩm được thảo luận trên trang này là mỹ phẩm/chăm sóc cá nhân. Chúng không phải là thuốc và không nhằm mục đích chẩn đoán, điều trị, chữa bệnh hoặc ngăn ngừa bất kỳ bệnh nào.",
@@ -391,6 +400,12 @@ const vi: LocaleDictionary = {
       "Bằng cách sử dụng trang web Clearion Labs này, bạn đồng ý rằng nội dung được cung cấp cho mục đích thông tin B2B chung về mỹ phẩm / chăm sóc cá nhân HOCl xịt OEM và bán buôn. Báo giá, thời gian thực hiện và thông số kỹ thuật chỉ được xác nhận bằng văn bản sau khi xem xét yêu cầu.",
       "Thông tin sản phẩm (bao gồm nồng độ hoặc độ pH được đề cập) mang tính mô tả về công thức mỹ phẩm và không phải là tuyên bố y tế. Bạn có trách nhiệm đảm bảo hoạt động tiếp thị và ghi nhãn của mình tuân thủ luật pháp tại thị trường điểm đến của bạn.",
       "“<4”” là tên thương hiệu tạm thời được sử dụng cho trang v1 này. Các trang hoặc danh mục giá có thể thay đổi mà không báo trước cho đến khi có báo giá chính thức.",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "Tuyên bố từ chối trách nhiệm về mỹ phẩm:",
     disclaimerBody: "Sản phẩm Clearion Labs là mỹ phẩm/chăm sóc cá nhân (ví dụ: xịt rửa mặt và xịt dưỡng da hàng ngày). Chúng không nhằm mục đích chẩn đoán, điều trị, chữa bệnh hoặc ngăn ngừa bệnh tật. Không có tuyên bố về thuốc hoặc thiết bị nào được FDA chứng nhận cho các sản phẩm này trên trang web này.",

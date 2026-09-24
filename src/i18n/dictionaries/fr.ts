@@ -38,7 +38,7 @@ const fr: LocaleDictionary = {
     productInterest: "Intérêt du produit",
     productHocl: "HOCl spray (héros)",
     productPackaging: "HOCl pulvérisations + emballage uniquement",
-    productSide: "⟧ Plus de⟦ 16 SKU latéraux (PDRN etc.)",
+    productSide: "HOCl + SKU latéraux (PDRN etc.)",
     productOther: "Autre / discutez",
     quantity: "Quantité /MOQ billets",
     quantityPh: "p. ex. échantillon, 500 pièces, 5 000+/mois",
@@ -79,7 +79,7 @@ const fr: LocaleDictionary = {
     defaultTitle: "Assortiment de produits",
     defaultTagline: "Formats",
     introAll: "HOCl La brume faciale est le héros. Les références secondaires ci-dessous sont un assortiment secondaire — discutez des formats, du remplissage et des options de marque de distributeur sur RFQ. Nous ne publions pas de concentrations ou de prix unitaires non vérifiés en tant qu'offres.",
-    introHero: "Notre SKU Lead Cosmetics. Formats couramment discutés avec ⟦20 partenaires⟧ et gros.",
+    introHero: "Notre SKU Lead Cosmetics. Formats couramment discutés avec 20 partenaireset gros.",
     introSide: "UGS secondaires pour la planification de l'assortiment — discutez-en le RFQ. HOCl La brume faciale reste en tête.",
     items: {
       "hocl-facial-mist": {
@@ -137,7 +137,7 @@ const fr: LocaleDictionary = {
     },
   },
   home: {
-    title: "Soins de la peau de marque blanche et HOCl fabricants | OEM et gros",
+    title: "HOCl OEM et gros soins peau",
     description: "Clearion Labs — Soins de la peau de marque blanche et HOCl fabricants de vaporisateurs d'acide hypochloreux de qualité cosmétique. OEM/marque blanche et gros pour les salons, les détaillants et les distributeurs. Échantillon d'abord.",
     badge: "B2B · Cosmétiques OEM · Concentration sur le marché américain",
     h1a: "OEM & gros de spray HOCl",
@@ -154,7 +154,7 @@ const fr: LocaleDictionary = {
     oemLink: "Explorer OEM →",
     wholesaleBadge: "Gros",
     wholesaleTitle: "Gros / compte ouvert",
-    wholesaleBody: "⟧ Spray en vrac ⟦16 pour les chaînes de salons, les détaillants et les distributeurs. Listes de prix, MOQ niveaux et approvisionnement facile à réapprovisionner.",
+    wholesaleBody: "Spray en vrac 16 pour les chaînes de salons, les détaillants et les distributeurs. Listes de prix, MOQ niveaux et approvisionnement facile à réapprovisionner.",
     wholesaleLink: "Découvrir le gros →",
     productsTitle: "Assortiment de produits",
     productsTagline: "SKU côté Hero +",
@@ -171,7 +171,7 @@ const fr: LocaleDictionary = {
     faqItems: [
       {
         title: "Quel est votre produit phare ?",
-        description: "Brume faciale à l'acide hypochloreux (<strong>HOCl</strong>) pour les cosmétiques /soins personnels — brume nettoyante quotidienne pour le visage et spray pour les soins de la peau. Tailles de vente au détail typiques ~60–120&nbsp;ml ; voyage ~20&nbsp;ml carte/mini spray. Les références secondaires (sérum peptidique⟦ 17⟧ +, crème à la gelée, toner au lait/lotion lactée) sont un assortiment secondaire — discutez-en sur RFQ.",
+        description: "Brume faciale à l'acide hypochloreux (<strong>HOCl</strong>) pour les cosmétiques /soins personnels — brume nettoyante quotidienne pour le visage et spray pour les soins de la peau. Tailles de vente au détail typiques ~60–120&nbsp;ml ; voyage ~20&nbsp;ml carte/mini spray. Les références secondaires (sérum peptidique +, crème à la gelée, toner au lait/lotion lactée) sont un assortiment secondaire — discutez-en sur RFQ.",
       },
       {
         title: "Soutenez-vous la marque blanche et la gros ?",
@@ -179,17 +179,17 @@ const fr: LocaleDictionary = {
       },
       {
         title: "Puis-je obtenir des échantillons avant un cycle de production ?",
-        description: "L'échantillon d'abord est notre chemin recommandé. Partagez la taille, la destination et les spécifications préférées de la bouteille sur le <a href=\"{rfq}\" class=\"text-link\">formulaire de demande⟦ 8⟧. Discuter du⟧ pH de la concentration ⟦9 tel que divulgué sur RFQ.",
+        description: "L'échantillon d'abord est notre chemin recommandé. Partagez la taille, la destination et les spécifications préférées de la bouteille sur le <a href=\"{rfq}\" class=\"text-link\">formulaire de demande</a>. Discuter dupH de la concentration 9 tel que divulgué sur RFQ.",
       },
       {
         title: "Ces produits sont-ils des médicaments ou des dispositifs médicaux ?",
-        description: "N ° Clearion Labs positionne HOCl pulvérisations comme <strong>cosmétiques /soins personnels⟦ 7⟧. Nous ne faisons pas d'allégations de traitement de la maladie et n'utilisons pas de formulation de médicament/dispositif approuvée par la FDA pour ces produits.",
+        description: "N ° Clearion Labs positionne HOCl pulvérisations comme <strong>cosmétiques /soins personnels. Nous ne faisons pas d'allégations de traitement de la maladie et n'utilisons pas de formulation de médicament/dispositif approuvée par la FDA pour ces produits.",
       },
     ],
     formTitle: "Obtenez un devis d'usine",
   },
   oem: {
-    title: "Soins de la peau de marque blanche · HOCl Fabricant OEM",
+    title: "HOCl marque blanche OEM",
     description: "Soins de la peau de marque blanche OEM et HOCl fabricant de spray facial à l'acide hypochloreux. Concentration, conditionnement, échantillonnage RFQ pour les marques et les lignes de salon. Cosmétiques /soins personnels uniquement.",
     kicker: "OEM/ Marque blanche",
     h1: "Votre marque sur HOCl pulvérisations — de l'échantillon à l'étagère",
@@ -248,12 +248,12 @@ const fr: LocaleDictionary = {
     ],
     productsTitle: "Assortiment que vous pouvez labelliser",
     productsTagline: "OEM formats",
-    productsIntro: "Dirigez avec ⟦16 brouillards⟧ faciaux. Les références secondaires sont clairement étiquetées comme secondaires — les formats sont couramment discutés avec OEM partenaires. Spécifications et prix via RFQ.",
+    productsIntro: "Dirigez avec 16 brouillardsfaciaux. Les références secondaires sont clairement étiquetées comme secondaires — les formats sont couramment discutés avec OEM partenaires. Spécifications et prix via RFQ.",
     faqTitle: "OEM FAQ",
     faqItems: [
       {
-        title: "Que puis-je personnaliser sur un⟧ projet HOCl spray ⟦20 ?",
-        description: "Leviers typiques : concentration / pH selon les spécifications divulguées, volume de remplissage (vente au détail ~60–120&nbsp;ml ou déplacement ~20&nbsp;ml),⟧ actionneur du flacon ⟦ ⟦9, illustration de l'étiquette⟧ 9 et emballage intérieur/extérieur. Partagez votre canal cible (salon ou commerce de détail) pour obtenir des conseils sur l'emballage.",
+        title: "Que puis-je personnaliser sur unprojet HOCl spray 20 ?",
+        description: "Leviers typiques : concentration / pH selon les spécifications divulguées, volume de remplissage (vente au détail ~60–120&nbsp;ml ou déplacement ~20&nbsp;ml),actionneur du flacon 9, illustration de l'étiquette9 et emballage intérieur/extérieur. Partagez votre canal cible (salon ou commerce de détail) pour obtenir des conseils sur l'emballage.",
       },
       {
         title: "Y a-t-il un high MOQ avant la marque blanche ?",
@@ -265,17 +265,17 @@ const fr: LocaleDictionary = {
       },
       {
         title: "Qu'en est-il de PDRN ou d'autres références secondaires ?",
-        description: "HOCl La brume faciale est le héros. L'assortiment latéral (sérum peptidique⟦ 17⟧ +, crème à la gelée, toner au lait/lotion laiteuse) peut être de marque blanche pour la planification de l'assortiment — demandez sur le formulaire de demande, le cas échéant.",
+        description: "HOCl La brume faciale est le héros. L'assortiment latéral (sérum peptidique +, crème à la gelée, toner au lait/lotion laiteuse) peut être de marque blanche pour la planification de l'assortiment — demandez sur le formulaire de demande, le cas échéant.",
       },
     ],
     formTitle: "OEM/marque DE distributeur RFQ",
   },
   wholesale: {
-    title: "Gros de HOCl vaporisateurs | Approvisionnement en vrac de soins de la peau de marque blanche",
+    title: "Gros spray HOCl",
     description: "Gros de HOCl brouillards pour le visage à base d'acide hypochloreux de qualité cosmétique en aérosol et en vrac pour les salons, les détaillants et les distributeurs. Ouvrez un compte, une liste de prix et MOQ demandes.",
     kicker: "Gros",
-    h1: "⟧ Spray en vrac ⟦16 pour les acheteurs commerciaux",
-    lead: "Ouvrez une conversation de gros pour les sprays pour le visage à l'acide hypochloreux de qualité cosmétique — liste de prix par niveau de volume,⟧ clarté ⟦19 et approvisionnement facile à reconstituer.",
+    h1: "Spray en vrac 16 pour les acheteurs commerciaux",
+    lead: "Ouvrez une conversation de gros pour les sprays pour le visage à l'acide hypochloreux de qualité cosmétique — liste de prix par niveau de volume,clarté 19 et approvisionnement facile à reconstituer.",
     ctaPrice: "Demande de prix",
     ctaOem: "Marque de distributeur",
     highlightsTitle: "Points forts du programme de gros",
@@ -308,25 +308,25 @@ const fr: LocaleDictionary = {
     faqItems: [
       {
         title: "À qui s'adresse la gros ?",
-        description: "Groupes de salons, spas, détaillants, vendeurs de commerce électronique et distributeurs qui ont besoin d'un approvisionnement en⟧ spray ⟦16 reproductible sans projet de marque blanche complet — bien que la marque blanche puisse être ajoutée ultérieurement. Les formats d'assortiment latéraux peuvent être inclus le cas échéant.",
+        description: "Groupes de salons, spas, détaillants, vendeurs de commerce électronique et distributeurs qui ont besoin d'un approvisionnement enspray 16 reproductible sans projet de marque blanche complet — bien que la marque blanche puisse être ajoutée ultérieurement. Les formats d'assortiment latéraux peuvent être inclus le cas échéant.",
       },
       {
         title: "Comment obtenir une liste de prix ?",
-        description: "Envoyez la <a href=\"#inquiry-form\" class=\"text-link\">demande de gros⟦ 8⟧ avec le pays de destination et le volume mensuel estimé. Nous partageons MOQ niveaux et options d'échantillons. Nous ne publions pas de prix unitaires fixes sur ce site.",
+        description: "Envoyez la <a href=\"#inquiry-form\" class=\"text-link\">demande de gros avec le pays de destination et le volume mensuel estimé. Nous partageons MOQ niveaux et options d'échantillons. Nous ne publions pas de prix unitaires fixes sur ce site.",
       },
       {
-        title: "Qu'est-ce qu'un ⟦19 typique⟧ ?",
+        title: "Qu'est-ce qu'un 19 typique?",
         description: "MOQ dépend de l'UGS et de l'emballage. Les packs d'échantillons sont disponibles en premier ; les niveaux en vrac sont mis à l'échelle avec les quantités de cartons. Incluez votre cible dans le formulaire pour une réponse précise.",
       },
       {
         title: "Les comptes de gros peuvent-ils passer à la marque blanche plus tard ?",
-        description: "Oui. De nombreux partenaires commencent la gros, puis migrent l'emballage vers la marque OEM une fois que la demande est prouvée. Voir <a href=\"{oem}\" class=\"text-link\">OEM/Marque blanche⟦ 8⟧.",
+        description: "Oui. De nombreux partenaires commencent la gros, puis migrent l'emballage vers la marque OEM une fois que la demande est prouvée. Voir <a href=\"{oem}\" class=\"text-link\">OEM/Marque blanche.",
       },
     ],
     formTitle: "Enquête sur la gros /compte ouvert",
   },
   contact: {
-    title: "Contacter / Demander un devis",
+    title: "Contact / Devis",
     description: "Contactez le Clearion Labs pour obtenir des devis HOCl spray OEM, de marque blanche et de gros. Échantillon d'abord. Répondez généralement dans les ~24 heures.",
     h1: "Contactez nous",
     lead: "Style usine RFQ pour HOCl spray OEM et gros. Demandes de renseignements sur les cosmétiques /soins personnels uniquement.",
@@ -339,13 +339,13 @@ const fr: LocaleDictionary = {
     cards: [
       {
         t: "OEM/ Marque blanche",
-        d: "Concentration, emballage et échantillonnage RFQs pour le⟧ spray ⟦16 de marque.",
-        href: "OEM",
+        d: "Concentration, emballage et échantillonnage RFQs pour lespray 16 de marque.",
+        href: "/oem",
       },
       {
         t: "Gros",
         d: "Liste de prix, MOQ, et conversations ouvertes pour les acheteurs en vrac.",
-        href: "De gros",
+        href: "/wholesale",
       },
       {
         t: "E-mail de repli",
@@ -370,27 +370,39 @@ const fr: LocaleDictionary = {
     ],
   },
   privacy: {
-    title: "Privacy Policy",
-    description: "Privacy policy stub for Clearion Labs B2B website.",
-    h1: "Privacy Policy",
-    updated: "Last updated: September 22, 2026 · Stub for v1 launch",
+    title: "Politique de confidentialité",
+    description: "Politique de confidentialité Clearion Labs (site B2B).",
+    h1: "Politique de confidentialité",
+    updated: "Dernière mise à jour : 22 septembre 2026",
     paragraphs: [
-      "Clearion Labs (“we”) operates this website to receive B2B inquiries about HOCl spray OEM, private label, and wholesale. When you submit the inquiry form, we collect the information you provide (such as name, email, company, buyer type, and message) to respond to your request.",
-      "Form data may be stored in your browser (localStorage) for confirmation and/or sent to our inquiry endpoint or email. We do not sell personal information. Do not submit sensitive health information — this site is for cosmetics / personal care B2B inquiries only.",
-      "For privacy requests, email <strong>inquiries@clearionlabs.example</strong> (placeholder — replace before production).",
+      "Clearion Labs (« nous ») exploite ce site pour recevoir des demandes B2B concernant les sprays faciaux HOCl à usage cosmétique / soins personnels en OEM, marque blanche et gros. Lorsque vous soumettez le formulaire, nous collectons les informations fournies (nom, e-mail, société, type d'acheteur, message) pour répondre à votre demande.",
+      "Les données du formulaire peuvent être stockées dans votre navigateur (localStorage) pour confirmation et/ou envoyées à notre point de terminaison d'inquiry ou par e-mail. Nous ne vendons pas d'informations personnelles. N'envoyez pas d'informations de santé sensibles — ce site est réservé aux inquiries B2B cosmétiques / soins personnels.",
+      "Nous utilisons les données uniquement pour évaluer les opportunités OEM / marque blanche et gros, préparer des devis, organiser des échantillons et communiquer sur les commandes ou documents de conformité demandés. L'accès est limité au personnel commercial et opérations B2B.",
+      "Dans la configuration v1 actuelle, nous n'exploitons pas de trackers publicitaires tiers. Les cookies ou stockages similaires restent principalement sur votre appareil et peuvent être effacés via le navigateur.",
+      "Nous pouvons conserver les e-mails d'inquiry pendant une période commerciale raisonnable pour le suivi des devis, échantillons et bons de commande, puis les supprimer ou anonymiser, sauf obligation légale de conservation plus longue.",
+      "Acheteurs internationaux : les informations peuvent être traitées dans le pays où opèrent notre équipe commerciale et nos prestataires e-mail / hébergement. En soumettant une demande, vous reconnaissez ce traitement transfrontalier pour des discussions d'approvisionnement cosmétique B2B.",
+      "Vous pouvez demander l'accès, la correction ou la suppression des données personnelles envoyées via le formulaire en écrivant à notre contact confidentialité. Nous répondrons dans un délai commercialement raisonnable. N'incluez pas de détails médicaux.",
+      "Cette politique peut être mise à jour en cas de changement d'hébergement, de formulaires ou d'entité juridique. La date « Dernière mise à jour » reflète le brouillon actuel ; remplacez les contacts fictifs avant la mise en production.",
+      "Pour les demandes de confidentialité, écrivez à <strong>inquiries@clearionlabs.example</strong> (placeholder — à remplacer avant production)."
     ],
     disclaimerTitle: "Avertissement cosmétiques :",
     disclaimerBody: "Products discussed on this site are intended as cosmetics / personal care. They are not drugs and are not intended to diagnose, treat, cure, or prevent any disease.",
   },
   terms: {
-    title: "Terms of Use",
-    description: "Terms of use stub for Clearion Labs B2B website.",
-    h1: "Terms of Use",
-    updated: "Last updated: September 22, 2026 · Stub for v1 launch",
+    title: "Conditions d'utilisation",
+    description: "Conditions d\'utilisation Clearion Labs (site B2B).",
+    h1: "Conditions d\'utilisation",
+    updated: "Dernière mise à jour : 22 septembre 2026",
     paragraphs: [
-      "By using this Clearion Labs website, you agree that content is provided for general B2B informational purposes about cosmetics / personal care HOCl spray OEM and wholesale. Quotes, MOQs, lead times, and specifications are confirmed only in writing after inquiry review.",
-      "Product information (including concentration or pH where mentioned) is descriptive of cosmetics formulations and is not a medical claim. You are responsible for ensuring your own marketing and labeling comply with laws in your destination markets.",
-      "“Clearion Labs” is a temporary brand name used for this v1 site. Pricing pages or catalogs may change without notice until a formal quotation is issued.",
+      "En utilisant ce site Clearion Labs, vous acceptez que le contenu soit fourni à titre d'information B2B générale sur l'OEM et le gros de sprays HOCl cosmétiques / soins personnels. Devis, MOQ, délais et spécifications ne sont confirmés que par écrit après examen de la demande.",
+      "Les informations produit (concentration ou pH le cas échéant) décrivent des formulations cosmétiques et ne constituent pas une allégation médicale. Vous êtes responsable de la conformité de votre marketing et de votre étiquetage aux lois des marchés de destination.",
+      "« Clearion Labs » est un nom de marque temporaire pour ce site v1. Les pages de prix ou catalogues peuvent changer sans préavis jusqu'à l'émission d'un devis formel.",
+      "Les inquiries et le contenu du site ne créent pas de contrat d'approvisionnement contraignant. MOQ, prix unitaires, délais, incoterms, paiement et specs de formulation ne deviennent contraignants que lorsqu'ils sont confirmés dans un devis écrit, une proforma ou une acceptation de bon de commande de Clearion Labs.",
+      "Les échantillons, le cas échéant, sont destinés à l'évaluation cosmétique (toucher, parfum, emballage, maquette d'étiquette) et ne doivent pas être commercialisés avec des allégations de traitement de maladie.",
+      "Propriété intellectuelle : vos créations de marque et marques restent les vôtres. Les fichiers de fabrication, le savoir-faire et les formules HOCl cosmétiques génériques que nous divulguons restent confidentiels selon tout NDA ou conditions de devis.",
+      "Vous acceptez de ne pas utiliser ce site pour solliciter des produits illégaux, formuler des allégations médicales sur les sprays HOCl, ou aspirer le contenu à des fins concurrentielles abusives. Nous pouvons refuser les demandes visant un positionnement médicament, dispositif ou biocide pour ces SKU cosmétiques.",
+      "Limitation : dans toute la mesure permise par la loi, Clearion Labs n'est pas responsable des dommages indirects découlant de l'utilisation de ce site B2B informatif. La responsabilité produit et les garanties, le cas échéant, figurent uniquement dans les documents commerciaux écrits.",
+      "Remplacez la marque temporaire et les e-mails fictifs par les détails de l'entité juridique de production avant de vous fier à ces pages pour la conformité client."
     ],
     disclaimerTitle: "Avertissement cosmétiques :",
     disclaimerBody: "Clearion Labs products are cosmetics / personal care (e.g. facial cleansing mists and daily skin sprays). They are not intended to diagnose, treat, cure, or prevent disease. No FDA-cleared drug or device claims are made for these products on this site.",

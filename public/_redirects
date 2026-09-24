@@ -1,1 +1,2 @@
-# Cloudflare Pages redirects (placeholder)
+# Cloudflare Workers static assets redirects
+/sitemap.xml /sitemap-index.xml 308

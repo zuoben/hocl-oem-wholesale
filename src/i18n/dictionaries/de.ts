@@ -137,7 +137,7 @@ const de: LocaleDictionary = {
     },
   },
   home: {
-    title: "Private-Label-Hautpflege & HOCl-Hersteller | OEM & Großhandel",
+    title: "HOCl OEM & Großhandel Hautpflege",
     description: "Clearion Labs — Private-Label-Hautpflege und HOCl-Hersteller für kosmetiktaugliches Hypochlorige-Säure-Spray. OEM / Private Label und Großhandel für Salons, Händler und Distributoren. Zuerst Muster.",
     badge: "B2B · Kosmetik-OEM · Fokus US-Markt",
     h1a: "HOCl-Spray OEM & Großhandel",
@@ -189,7 +189,7 @@ const de: LocaleDictionary = {
     formTitle: "Fabrikähnliches Angebot erhalten",
   },
   oem: {
-    title: "Private-Label-Hautpflege · HOCl-Hersteller OEM",
+    title: "HOCl Private-Label OEM",
     description: "Private-Label-Hautpflege-OEM und HOCl-Hersteller für Hypochlorige-Säure-Gesichtsspray. Konzentrations-, Verpackungs- und Muster-RFQ für Marken und Salonlinien. Nur Kosmetik / Körperpflege.",
     kicker: "OEM / Private Label",
     h1: "Ihre Marke auf HOCl-Spray — vom Muster bis zum Regal",
@@ -271,7 +271,7 @@ const de: LocaleDictionary = {
     formTitle: "OEM- / Private-Label-RFQ",
   },
   wholesale: {
-    title: "HOCl-Spray Großhandel | Bulk Private-Label-Hautpflege",
+    title: "HOCl-Spray Großhandel",
     description: "Großhandel mit HOCl-Spray und Bulk kosmetiktauglichem Hypochlorige-Säure-Gesichtsnebel für Salons, Händler und Distributoren. Offenes Konto, Preisliste und MOQ-Anfrage.",
     kicker: "Großhandel",
     h1: "HOCl-Spray in Menge für gewerbliche Käufer",
@@ -326,7 +326,7 @@ const de: LocaleDictionary = {
     formTitle: "Großhandels- / Kontoeröffnungsanfrage",
   },
   contact: {
-    title: "Kontakt / Angebot anfordern",
+    title: "Kontakt / Angebot",
     description: "Kontaktieren Sie Clearion Labs für HOCl-Spray OEM-, Private-Label- und Großhandelsangebote. Zuerst Muster. Antwort typisch innerhalb von ~24 Stunden.",
     h1: "Kontaktieren Sie uns",
     lead: "Fabrikähnliches RFQ für HOCl-Spray OEM und Großhandel. Nur Kosmetik-/Körperpflege-Anfragen.",
@@ -378,6 +378,12 @@ const de: LocaleDictionary = {
       "Clearion Labs („wir“) betreibt diese Website, um B2B-Anfragen zu HOCl-Spray OEM, Private Label und Großhandel entgegenzunehmen. Wenn Sie das Anfrageformular absenden, erheben wir die von Ihnen angegebenen Informationen (z. B. Name, E-Mail, Unternehmen, Käufertyp und Nachricht), um Ihre Anfrage zu beantworten.",
       "Formulardaten können in Ihrem Browser (localStorage) zur Bestätigung gespeichert und/oder an unseren Anfrage-Endpunkt oder per E-Mail gesendet werden. Wir verkaufen keine personenbezogenen Daten. Reichen Sie keine sensiblen Gesundheitsinformationen ein — diese Site dient nur Kosmetik-/Körperpflege-B2B-Anfragen.",
       "Für Datenschutzanfragen mailen Sie <strong>inquiries@clearionlabs.example</strong> (Platzhalter — vor Produktion ersetzen).",
+      "We use inquiry data only to evaluate OEM / private-label and wholesale opportunities, prepare quotations, arrange samples, and communicate about orders or compliance documents you request. Access is limited to personnel handling B2B sales and operations.",
+      "If you use cookies or similar storage in your browser (for example localStorage for form confirmation), that data stays on your device unless you clear it. We do not run third-party advertising trackers on this marketing site in the current v1 configuration.",
+      "We may retain inquiry emails and related records for a reasonable business period to follow up on open quotes, samples, and purchase orders, then delete or anonymize them when no longer needed, unless a longer retention is required by law.",
+      "International buyers: information you submit may be processed in the country where our commercial team operates and where email or hosting providers store data. By submitting an inquiry you acknowledge this cross-border processing for B2B cosmetics supply discussions.",
+      "You may request access, correction, or deletion of personal data you sent via the inquiry form by emailing our privacy contact. We will respond within a commercially reasonable time. Do not include medical or prescription details in any request.",
+      "This policy may be updated when we change hosting, forms, or legal entities. The “Last updated” date above reflects the current stub; replace placeholder contacts before production go-live."
     ],
     disclaimerTitle: "Kosmetik-Hinweis:",
     disclaimerBody: "Auf dieser Site besprochene Produkte sind als Kosmetik / Körperpflege gedacht. Sie sind keine Arzneimittel und nicht zur Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten bestimmt.",
@@ -391,6 +397,12 @@ const de: LocaleDictionary = {
       "Durch die Nutzung dieser Clearion Labs Website stimmen Sie zu, dass Inhalte zu allgemeinen B2B-Informationszwecken über Kosmetik-/Körperpflege-HOCl-Spray OEM und Großhandel bereitgestellt werden. Angebote, MOQs, Lieferzeiten und Spezifikationen werden erst schriftlich nach Anfrageprüfung bestätigt.",
       "Produktinformationen (einschließlich Konzentration oder pH, sofern genannt) beschreiben kosmetische Formulierungen und sind kein medizinischer Claim. Sie sind dafür verantwortlich, dass Ihr Marketing und Ihre Kennzeichnung den Gesetzen Ihrer Zielmärkte entsprechen.",
       "„Clearion Labs“ ist ein temporärer Markenname für diese v1-Site. Preiseseiten oder Kataloge können ohne Vorankündigung ändern, bis ein formelles Angebot vorliegt.",
+      "Inquiries and website content do not create a binding supply contract. MOQs, unit prices, lead times, shipping terms, payment terms, and formulation specs become binding only when confirmed in a written quotation, proforma invoice, or purchase order acceptance from Clearion Labs.",
+      "Samples, when provided, are for cosmetics evaluation (feel, scent, packaging fit, label layout) and must not be marketed with disease-treatment claims. You remain responsible for claim review under the cosmetics or personal-care rules of each destination market.",
+      "Intellectual property: your brand artwork and trademarks remain yours. Manufacturing files, process know-how, and generic HOCl cosmetics formulas we disclose remain subject to confidentiality as stated in any NDA or quotation terms we issue.",
+      "You agree not to use this site to solicit illegal products, make medical claims about HOCl sprays, or scrape content for competitive misuse. We may refuse or close inquiries that request drug, device, or biocide positioning for these cosmetics SKUs.",
+      "Limitation: to the fullest extent permitted by law, Clearion Labs is not liable for indirect or consequential damages arising from use of this informational B2B site. Product liability and warranty terms, if any, are stated only in written commercial documents.",
+      "Governing discussions for v1 are commercial B2B negotiations. Replace temporary brand and email placeholders with your production legal entity details before relying on these pages for customer-facing compliance."
     ],
     disclaimerTitle: "Kosmetik-Hinweis:",
     disclaimerBody: "Clearion Labs Produkte sind Kosmetik / Körperpflege (z. B. Gesichtsreinigungsnebel und tägliche Hautsprays). Sie sind nicht zur Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten bestimmt. Auf dieser Site werden keine FDA-cleared Arzneimittel- oder Geräteclaims für diese Produkte gemacht.",
