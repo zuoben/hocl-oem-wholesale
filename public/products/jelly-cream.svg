@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" fill="none" role="img" aria-label="Jelly cream jar silhouette">
+  <ellipse cx="80" cy="168" rx="48" ry="10" fill="#ccfbf1" opacity="0.6"/>
+  <path d="M36 100c0-8 6-14 14-14h60c8 0 14 6 14 14v48c0 14-12 24-28 24H64c-16 0-28-10-28-24V100z" fill="#f0fdfa" stroke="#0f766e" stroke-width="2.5"/>
+  <rect x="32" y="78" width="96" height="28" rx="8" fill="#0d9488"/>
+  <rect x="40" y="84" width="80" height="8" rx="3" fill="#14b8a6" opacity="0.5"/>
+  <ellipse cx="80" cy="130" rx="28" ry="16" fill="#99f6e4" opacity="0.45"/>
+  <path d="M58 128c8-10 36-10 44 0" stroke="#5eead4" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

@@ -3,17 +3,18 @@ import PageLayout from '../layouts/PageLayout.astro';
 import TrustBar from '../components/TrustBar.astro';
 import FAQ from '../components/FAQ.astro';
 import InquiryForm from '../components/InquiryForm.astro';
+import ProductGrid from '../components/ProductGrid.astro';
 
 const faqItems = [
   {
     title: 'Who is wholesale for?',
     description:
-      'Salon groups, spas, retailers, e-commerce sellers, and distributors who need repeatable HOCl spray supply without a full private-label project — though private label can be added later.',
+      'Salon groups, spas, retailers, e-commerce sellers, and distributors who need repeatable HOCl spray supply without a full private-label project — though private label can be added later. Side assortment formats can be included when relevant.',
   },
   {
     title: 'How do I get a price list?',
     description:
-      'Submit the <a href="#inquiry-form" class="text-link">wholesale inquiry</a> with destination country and estimated monthly volume. We share MOQ tiers and sample options.',
+      'Submit the <a href="#inquiry-form" class="text-link">wholesale inquiry</a> with destination country and estimated monthly volume. We share MOQ tiers and sample options. We do not publish fixed unit prices on this site.',
   },
   {
     title: 'What is a typical MOQ?',
@@ -89,6 +90,14 @@ const faqItems = [
       </div>
     </div>
   </section>
+
+  <ProductGrid
+    title="Wholesale-ready formats"
+    tagline="Assortment"
+    intro="Formats commonly discussed with wholesale partners. HOCl Facial Mist is the lead; side SKUs are secondary and available to add on RFQ. No published unit prices or MOQs as fixed offers."
+    compact={true}
+    showCta={true}
+  />
 
   <FAQ title="Wholesale FAQ" items={faqItems} />
   <InquiryForm title="Wholesale / open account inquiry" defaultBuyerType="Wholesale" />

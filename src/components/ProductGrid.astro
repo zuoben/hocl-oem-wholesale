@@ -1,0 +1,134 @@
+---
+import { products, type Product, type ProductRole } from '../data/products';
+
+interface Props {
+  /** Limit to hero, side, or show all (default). */
+  role?: ProductRole | 'all';
+  title?: string;
+  tagline?: string;
+  intro?: string;
+  /** Show RFQ CTA under the grid. */
+  showCta?: boolean;
+  /** Compact variant for OEM/wholesale pages. */
+  compact?: boolean;
+}
+
+const {
+  role = 'all',
+  title = 'Product assortment',
+  tagline = 'Formats',
+  intro,
+  showCta = true,
+  compact = false,
+} = Astro.props;
+
+const list: Product[] =
+  role === 'all' ? products : products.filter((p) => p.role === role);
+
+const defaultIntro =
+  role === 'side'
+    ? 'Secondary SKUs for assortment planning — discuss on RFQ. HOCl Facial Mist remains the lead.'
+    : role === 'hero'
+      ? 'Our lead cosmetics SKU. Formats commonly discussed with OEM and wholesale partners.'
+      : 'HOCl Facial Mist is the hero. Side SKUs below are a secondary assortment — discuss formats, fill, and private-label options on RFQ. We do not publish unverified concentrations or unit prices as offers.';
+---
+
+<section class:list={['py-16 sm:py-20', compact ? 'bg-white' : 'bg-slate-50']}>
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">{tagline}</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900">{title}</h2>
+      <p class="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
+        {intro ?? defaultIntro}
+      </p>
+    </div>
+
+    <div
+      class:list={[
+        'mt-12 grid gap-6',
+        list.length === 1 ? 'mx-auto max-w-xl' : 'sm:grid-cols-2',
+        list.length >= 3 && 'lg:grid-cols-2',
+        list.length >= 4 && 'xl:grid-cols-2',
+      ]}
+    >
+      {
+        list.map((p) => (
+          <article
+            class:list={[
+              'flex flex-col rounded-2xl border bg-white p-6 shadow-sm transition hover:shadow-md sm:p-7',
+              p.role === 'hero'
+                ? 'border-brand-300 ring-1 ring-brand-100'
+                : 'border-slate-200',
+            ]}
+          >
+            <div class="flex items-start gap-4">
+              <div class="flex h-24 w-20 shrink-0 items-center justify-center rounded-xl bg-gradient-to-b from-brand-50 to-slate-50 p-2">
+                <img
+                  src={p.image}
+                  alt=""
+                  width="80"
+                  height="100"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  {p.role === 'hero' ? (
+                    <span class="inline-flex rounded-full bg-brand-100 px-2.5 py-0.5 text-xs font-semibold text-brand-800">
+                      Hero
+                    </span>
+                  ) : (
+                    <span class="inline-flex rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600">
+                      Side assortment · discuss on RFQ
+                    </span>
+                  )}
+                </div>
+                <h3 class="mt-2 text-lg font-bold text-slate-900">{p.name}</h3>
+                <p class="mt-1 text-sm text-slate-600">{p.tagline}</p>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Formats commonly discussed with OEM partners
+              </p>
+              <ul class="mt-2 flex flex-wrap gap-2">
+                {p.formats.map((f) => (
+                  <li class="rounded-lg border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-700">
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <ul class="mt-5 flex-1 space-y-2 text-sm text-slate-700">
+              {p.bullets.map((b) => (
+                <li class="flex gap-2">
+                  <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+
+    {
+      showCta && (
+        <div class="mt-10 text-center">
+          <p class="text-sm text-slate-500">
+            Concentration, pH, fill, and packaging are discussed as disclosed specs on RFQ — not published as fixed offers here.
+          </p>
+          <a
+            href="/contact#inquiry-form"
+            class="mt-4 inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-700"
+          >
+            Request assortment RFQ
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" fill="none" role="img" aria-label="Milk toner lotion bottle silhouette">
+  <path d="M55 62c0-6 4-10 10-10h30c6 0 10 4 10 10v114c0 8-6 14-14 14H69c-8 0-14-6-14-14V62z" fill="#f1f5f9" stroke="#64748b" stroke-width="2.5"/>
+  <rect x="62" y="78" width="36" height="70" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="68" y="42" width="24" height="20" rx="4" fill="#0f766e"/>
+  <rect x="74" y="28" width="12" height="16" rx="2" fill="#0d9488"/>
+  <ellipse cx="80" cy="120" rx="12" ry="22" fill="#e2e8f0" opacity="0.7"/>
+  <path d="M70 100c6 4 14 4 20 0" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

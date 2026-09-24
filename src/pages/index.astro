@@ -3,12 +3,13 @@ import PageLayout from '../layouts/PageLayout.astro';
 import TrustBar from '../components/TrustBar.astro';
 import FAQ from '../components/FAQ.astro';
 import InquiryForm from '../components/InquiryForm.astro';
+import ProductGrid from '../components/ProductGrid.astro';
 
 const faqItems = [
   {
     title: 'What is your hero product?',
     description:
-      'Hypochlorous acid (<strong>HOCl</strong>) facial spray for cosmetics / personal care use — daily skin cleansing mist and salon-friendly spray formats. Side SKUs (e.g. PDRN serums) can be discussed separately.',
+      'Hypochlorous acid (<strong>HOCl</strong>) facial mist for cosmetics / personal care — daily facial cleansing mist and skin-care spray. Typical retail sizes ~60–120&nbsp;ml; travel ~20&nbsp;ml card/mini spray. Side SKUs (PDRN + peptide serum, jelly cream, milk toner / milky lotion) are a secondary assortment — discuss on RFQ.',
   },
   {
     title: 'Do you support private label and wholesale?',
@@ -18,7 +19,7 @@ const faqItems = [
   {
     title: 'Can I get samples before a production run?',
     description:
-      'Sample-first is our recommended path. Share concentration, bottle size, and destination on the <a href="/contact#inquiry-form" class="text-link">inquiry form</a>.',
+      'Sample-first is our recommended path. Share bottle size, destination, and any preferred specs on the <a href="/contact#inquiry-form" class="text-link">inquiry form</a>. Discuss concentration &amp; pH as disclosed specs on RFQ.',
   },
   {
     title: 'Are these products drugs or medical devices?',
@@ -46,7 +47,7 @@ const faqItems = [
         </h1>
         <p class="mt-5 text-lg leading-relaxed text-slate-600">
           Clearion Labs is a private label skincare and HOCl manufacturer partner for cosmetics-grade hypochlorous acid facial sprays —
-          private-label packaging, concentration &amp; fill options, and export-ready wholesale.
+          private-label packaging, fill options, and export-ready wholesale. Side assortment SKUs available to discuss on RFQ.
         </p>
         <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
@@ -99,34 +100,33 @@ const faqItems = [
     </div>
   </section>
 
-  <!-- Product focus -->
-  <section class="bg-slate-50 py-16 sm:py-20">
+  <ProductGrid
+    title="Product assortment"
+    tagline="Hero + side SKUs"
+  />
+
+  <!-- Typical inquiry CTA strip -->
+  <section class="bg-white pb-4 sm:pb-8">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
-      <div class="grid items-center gap-10 lg:grid-cols-2">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">Hero SKU</p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900">Hypochlorous acid (HOCl) spray</h2>
-          <p class="mt-4 text-slate-600 leading-relaxed">
-            Positioned as a daily facial cleansing mist / skin care spray for cosmetics channels —
-            not as a drug or wound-care device. Specs (e.g. concentration range, pH) disclosed as product parameters for B2B buyers.
-          </p>
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
-            <li class="flex gap-2"><span class="text-brand-600">●</span> Spray mist formats suited to salon &amp; retail shelves</li>
-            <li class="flex gap-2"><span class="text-brand-600">●</span> Private-label artwork &amp; packaging options</li>
-            <li class="flex gap-2"><span class="text-brand-600">●</span> Side SKUs (PDRN etc.) available to discuss — HOCl remains the lead</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-600 to-brand-800 p-8 text-white shadow-lg">
-          <p class="text-sm font-medium text-brand-100">Typical inquiry includes</p>
-          <ul class="mt-4 space-y-3 text-sm leading-relaxed">
-            <li>✓ Target market (US retail / salon / DTC brand)</li>
-            <li>✓ Bottle size &amp; estimated monthly volume</li>
-            <li>✓ Private label vs white-label wholesale</li>
-            <li>✓ Sample request before bulk PO</li>
-          </ul>
-          <a href="/contact#inquiry-form" class="mt-8 inline-flex rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50">
-            Start RFQ
-          </a>
+      <div class="rounded-2xl border border-brand-200 bg-gradient-to-br from-brand-600 to-brand-800 p-8 text-white shadow-lg sm:p-10">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p class="text-sm font-medium text-brand-100">Typical inquiry includes</p>
+            <ul class="mt-4 space-y-3 text-sm leading-relaxed">
+              <li>✓ Target market (US retail / salon / DTC brand)</li>
+              <li>✓ Bottle size &amp; estimated monthly volume</li>
+              <li>✓ Private label vs white-label wholesale</li>
+              <li>✓ Sample request before bulk PO</li>
+            </ul>
+          </div>
+          <div class="lg:text-right">
+            <p class="text-sm text-brand-100 leading-relaxed">
+              Specs such as concentration and pH are disclosed on RFQ — not published as fixed product facts here.
+            </p>
+            <a href="/contact#inquiry-form" class="mt-6 inline-flex rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-brand-800 hover:bg-brand-50">
+              Start RFQ
+            </a>
+          </div>
         </div>
       </div>
     </div>

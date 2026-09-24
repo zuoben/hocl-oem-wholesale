@@ -3,12 +3,13 @@ import PageLayout from '../layouts/PageLayout.astro';
 import TrustBar from '../components/TrustBar.astro';
 import FAQ from '../components/FAQ.astro';
 import InquiryForm from '../components/InquiryForm.astro';
+import ProductGrid from '../components/ProductGrid.astro';
 
 const faqItems = [
   {
     title: 'What can I customize on an HOCl spray OEM project?',
     description:
-      'Typical levers: concentration / pH as disclosed specs, fill volume, bottle &amp; actuator, label &amp; carton artwork, and inner/outer packaging. Share your target channel (salon vs retail) for packaging guidance.',
+      'Typical levers: concentration / pH as disclosed specs, fill volume (retail ~60–120&nbsp;ml or travel ~20&nbsp;ml), bottle &amp; actuator, label &amp; carton artwork, and inner/outer packaging. Share your target channel (salon vs retail) for packaging guidance.',
   },
   {
     title: 'Is there a high MOQ before private label?',
@@ -23,7 +24,7 @@ const faqItems = [
   {
     title: 'What about PDRN or other side SKUs?',
     description:
-      'HOCl spray is the hero. Side SKUs can be discussed lightly for assortment planning — ask on the inquiry form if relevant.',
+      'HOCl Facial Mist is the hero. Side assortment (PDRN + peptide serum, jelly cream, milk toner / milky lotion) can be private-labeled for assortment planning — ask on the inquiry form if relevant.',
   },
 ];
 
@@ -48,7 +49,8 @@ const steps = [
         </h1>
         <p class="mt-5 text-lg text-slate-600 leading-relaxed">
           Build a cosmetics-grade hypochlorous acid facial mist under your label.
-          Concentration &amp; packaging RFQ, sampling path, and export-ready production for US-facing brands.
+          Packaging RFQ, sampling path, and export-ready production for US-facing brands.
+          Side assortment SKUs available to private-label on request.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="#inquiry-form" class="rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700">Request OEM Quote</a>
@@ -95,6 +97,14 @@ const steps = [
       </div>
     </div>
   </section>
+
+  <ProductGrid
+    title="Assortment you can private-label"
+    tagline="OEM formats"
+    intro="Lead with HOCl Facial Mist. Side SKUs are clearly labeled as secondary — formats commonly discussed with OEM partners. Specs and pricing via RFQ."
+    compact={true}
+    showCta={true}
+  />
 
   <FAQ title="OEM FAQ" items={faqItems} />
   <InquiryForm title="OEM / private label RFQ" defaultBuyerType="OEM / Private Label" />
