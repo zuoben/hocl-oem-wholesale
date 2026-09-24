@@ -43,7 +43,7 @@ export const LOCALE_META: Record<
   th: { name: 'ไทย', htmlLang: 'th', ogLocale: 'th_TH', dir: 'ltr' },
 };
 
-export const PAGE_KEYS = ['/', '/oem', '/wholesale', '/contact', '/privacy', '/terms'] as const;
+export const PAGE_KEYS = ['/', '/oem', '/wholesale', '/contact', '/about', '/faq', '/privacy', '/terms'] as const;
 export type PageKey = (typeof PAGE_KEYS)[number];
 
 export function isLocale(value: string | undefined): value is Locale {

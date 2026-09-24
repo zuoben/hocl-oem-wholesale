@@ -1,0 +1,95 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import FAQ from '../components/FAQ.astro';
+import { localizePath, LOCALE_META, type Locale } from '../i18n/locales';
+import {
+  buildAboutPageSchema,
+  buildManufacturingPlantSchema,
+  buildOrganizationSchema,
+  buildFaqPageSchema,
+} from '../utils/organization-schema';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const L = (path: string) => localizePath(path, locale);
+const rfq = `${L('/contact')}#inquiry-form`;
+
+const title = 'About Clearion Labs | HOCl OEM & Wholesale';
+const description =
+  'Clearion Labs is a B2B OEM / private-label and wholesale partner for cosmetics-grade HOCl facial spray for salons, retailers, and distributors. Cosmetics / personal care only.';
+
+const faqItems = [
+  {
+    title: 'What does Clearion Labs make?',
+    description:
+      `Cosmetics-grade <strong>hypochlorous acid (HOCl) facial mist</strong> as the hero SKU, plus optional side assortment (PDRN + peptide serum, jelly cream, milk toner). See <a href="${L('/oem')}" class="text-link">OEM</a> and <a href="${L('/wholesale')}" class="text-link">Wholesale</a>.`,
+  },
+  {
+    title: 'Who is this for?',
+    description:
+      'B2B buyers only — brand builders, salon / spa groups, retailers, and distributors. There is no consumer checkout on this site.',
+  },
+  {
+    title: 'Are these drugs or medical devices?',
+    description:
+      'No. Products are positioned as <strong>cosmetics / personal care</strong>. We do not make disease-treatment claims.',
+  },
+  {
+    title: 'How do I start?',
+    description:
+      `Send a structured RFQ on the <a href="${rfq}" class="text-link">inquiry form</a> — sample-first is recommended before bulk.`,
+  },
+];
+
+const orgSchema = buildOrganizationSchema();
+const aboutSchema = buildAboutPageSchema();
+const plantSchema = buildManufacturingPlantSchema();
+const faqSchema = buildFaqPageSchema(faqItems);
+---
+
+<PageLayout title={title} description={description} locale={locale}>
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(aboutSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(plantSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="bg-gradient-to-b from-brand-50 via-white to-white py-16 sm:py-20">
+    <div class="mx-auto max-w-3xl px-4 text-center sm:px-6">
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">Company</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900">About Clearion Labs</h1>
+      <p class="mt-4 text-lg leading-relaxed text-slate-600">
+        OEM / private-label and wholesale partner for cosmetics-grade HOCl facial spray — built for salons, retail, and distributors.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href={rfq} class="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700">Request Quote</a>
+        <a href={L('/oem')} class="inline-flex rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-50">OEM programs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 sm:py-16">
+    <div class="mx-auto max-w-3xl space-y-6 px-4 text-sm leading-relaxed text-slate-700 sm:px-6">
+      <p>
+        <strong>Clearion Labs</strong> helps B2B partners launch or restock <strong>hypochlorous acid (HOCl) facial mist</strong> under private-label packaging or as wholesale open-account supply. Our role is OEM / private-label manufacturer partner and wholesale supplier — not a DTC storefront.
+      </p>
+      <p>
+        Hero focus: cosmetics-grade HOCl spray for daily facial cleansing mist / skin-care spray use cases. Side assortment SKUs can be discussed on RFQ for brand builders who need a broader shelf story.
+      </p>
+      <p>
+        Claims stay in the <strong>cosmetics / personal care</strong> lane. We do not market these products as drugs or medical devices, and we do not support disease-treatment language.
+      </p>
+      <ul class="list-disc space-y-2 ps-5">
+        <li><strong>What we make:</strong> HOCl facial mist (hero) + optional supporting skincare formats</li>
+        <li><strong>Who for:</strong> brands, salons/spas, retailers, distributors</li>
+        <li><strong>How to buy:</strong> <a class="text-brand-700 underline" href={L('/oem')}>OEM / private label</a> or <a class="text-brand-700 underline" href={L('/wholesale')}>wholesale</a></li>
+        <li><strong>Inquiry path:</strong> <a class="text-brand-700 underline" href={rfq}>contact form</a> (typical reply ~24h on business days)</li>
+        <li><strong>Locale:</strong> {LOCALE_META[locale].name}</li>
+      </ul>
+    </div>
+  </section>
+
+  <FAQ title="About Clearion Labs" items={faqItems} />
+</PageLayout>
