@@ -1,4 +1,14 @@
 ---
+import { getLocaleFromPath, localizePath, type Locale } from '../i18n/locales';
+import { getUi } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale: localeProp } = Astro.props;
+const locale = localeProp ?? getLocaleFromPath(Astro.url.pathname);
+const ui = getUi(locale);
 const year = new Date().getFullYear();
 ---
 
@@ -8,37 +18,35 @@ const year = new Date().getFullYear();
       <div class="sm:col-span-2">
         <div class="flex items-center gap-2 font-semibold text-slate-900">
           <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">CL</span>
-          Clearion Labs
+          {ui.brand}
         </div>
         <p class="mt-3 max-w-md text-sm leading-relaxed text-slate-600">
-          HOCl (hypochlorous acid) facial spray OEM, private label, and wholesale for salons, retailers, and distributors.
-          Cosmetics / personal care framing only.
+          {ui.blurb}
         </p>
       </div>
       <div>
-        <h3 class="text-sm font-semibold text-slate-900">Programs</h3>
+        <h3 class="text-sm font-semibold text-slate-900">{ui.programs}</h3>
         <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li><a class="hover:text-brand-700" href="/oem">OEM / Private Label</a></li>
-          <li><a class="hover:text-brand-700" href="/wholesale">Wholesale</a></li>
-          <li><a class="hover:text-brand-700" href="/contact#inquiry-form">Request a Quote</a></li>
+          <li><a class="hover:text-brand-700" href={localizePath('/oem', locale)}>{ui.oem}</a></li>
+          <li><a class="hover:text-brand-700" href={localizePath('/wholesale', locale)}>{ui.wholesale}</a></li>
+          <li><a class="hover:text-brand-700" href={`${localizePath('/contact', locale)}#inquiry-form`}>{ui.requestQuote}</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="text-sm font-semibold text-slate-900">Legal</h3>
+        <h3 class="text-sm font-semibold text-slate-900">{ui.legal}</h3>
         <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li><a class="hover:text-brand-700" href="/privacy">Privacy</a></li>
-          <li><a class="hover:text-brand-700" href="/terms">Terms</a></li>
+          <li><a class="hover:text-brand-700" href={localizePath('/privacy', locale)}>{ui.privacy}</a></li>
+          <li><a class="hover:text-brand-700" href={localizePath('/terms', locale)}>{ui.terms}</a></li>
         </ul>
       </div>
     </div>
 
     <div class="mt-10 rounded-xl border border-amber-200/80 bg-amber-50/80 px-4 py-3 text-xs leading-relaxed text-amber-950/80">
-      <strong>Cosmetics disclaimer:</strong> Clearion Labs products are intended as cosmetics / personal care (e.g. facial cleansing mists and daily skin sprays).
-      They are not drugs, are not intended to diagnose, treat, cure, or prevent any disease, and marketing claims must remain within cosmetics regulations applicable to your market.
+      <strong>{ui.disclaimerTitle}</strong> {ui.disclaimerBody}
     </div>
 
     <p class="mt-8 text-center text-xs text-slate-500">
-      © {year} Clearion Labs. All rights reserved. Temporary brand for B2B OEM / wholesale inquiries.
+      {ui.copyright.replace('{year}', String(year))}
     </p>
   </div>
 </footer>

@@ -1,10 +1,22 @@
 ---
-const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+import LocaleSwitch from './LocaleSwitch.astro';
+import { getLocaleFromPath, localizePath, stripLocale, type Locale } from '../i18n/locales';
+import { getUi } from '../i18n/ui';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale: localeProp } = Astro.props;
+const locale = localeProp ?? getLocaleFromPath(Astro.url.pathname);
+const ui = getUi(locale);
+const path = stripLocale(Astro.url.pathname.replace(/\/$/, '') || '/');
+
 const links = [
-  { href: '/', label: 'Home' },
-  { href: '/oem', label: 'OEM / Private Label' },
-  { href: '/wholesale', label: 'Wholesale' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/', label: ui.home },
+  { href: '/oem', label: ui.oem },
+  { href: '/wholesale', label: ui.wholesale },
+  { href: '/contact', label: ui.contact },
 ];
 
 function isActive(href: string) {
@@ -15,14 +27,14 @@ function isActive(href: string) {
 
 <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-    <a href="/" class="flex items-center gap-2 font-semibold tracking-tight text-slate-900">
+    <a href={localizePath('/', locale)} class="flex items-center gap-2 font-semibold tracking-tight text-slate-900">
       <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">CL</span>
-      <span class="hidden sm:inline">Clearion Labs</span>
+      <span class="hidden sm:inline">{ui.brand}</span>
     </a>
     <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
       {links.map((l) => (
         <a
-          href={l.href}
+          href={localizePath(l.href, locale)}
           class:list={[
             'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
             isActive(l.href) ? 'bg-brand-50 text-brand-800' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900',
@@ -32,17 +44,20 @@ function isActive(href: string) {
         </a>
       ))}
     </nav>
-    <a
-      href="/contact#inquiry-form"
-      class="rounded-lg bg-brand-600 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
-    >
-      Request Quote
-    </a>
+    <div class="flex items-center gap-2">
+      <LocaleSwitch class="hidden sm:block" />
+      <a
+        href={`${localizePath('/contact', locale)}#inquiry-form`}
+        class="rounded-lg bg-brand-600 px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
+      >
+        {ui.requestQuote}
+      </a>
+    </div>
   </div>
-  <nav class="flex gap-1 overflow-x-auto border-t border-slate-100 px-2 py-1 md:hidden" aria-label="Mobile">
+  <nav class="flex items-center gap-1 overflow-x-auto border-t border-slate-100 px-2 py-1 md:hidden" aria-label="Mobile">
     {links.map((l) => (
       <a
-        href={l.href}
+        href={localizePath(l.href, locale)}
         class:list={[
           'whitespace-nowrap rounded-md px-3 py-1.5 text-xs font-medium',
           isActive(l.href) ? 'bg-brand-50 text-brand-800' : 'text-slate-600',
@@ -51,5 +66,6 @@ function isActive(href: string) {
         {l.label}
       </a>
     ))}
+    <LocaleSwitch class="ms-auto shrink-0" />
   </nav>
 </header>

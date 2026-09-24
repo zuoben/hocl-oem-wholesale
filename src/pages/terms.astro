@@ -1,28 +1,5 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
+import LegalPage from '../views/LegalPage.astro';
+import { getTerms } from '../i18n/pages';
 ---
-
-<PageLayout title="Terms of Use" description="Terms of use stub for Clearion Labs B2B website.">
-  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <h1 class="text-3xl font-bold tracking-tight text-slate-900">Terms of Use</h1>
-    <p class="mt-2 text-sm text-slate-500">Last updated: September 22, 2026 · Stub for v1 launch</p>
-
-    <div class="mt-8 space-y-4 text-sm leading-relaxed text-slate-700">
-      <p>
-        By using this Clearion Labs website, you agree that content is provided for general B2B informational purposes about
-        cosmetics / personal care HOCl spray OEM and wholesale. Quotes, MOQs, lead times, and specifications are confirmed only in writing after inquiry review.
-      </p>
-      <p>
-        Product information (including concentration or pH where mentioned) is descriptive of cosmetics formulations and is not a medical claim.
-        You are responsible for ensuring your own marketing and labeling comply with laws in your destination markets.
-      </p>
-      <p>
-        “Clearion Labs” is a temporary brand name used for this v1 site. Pricing pages or catalogs may change without notice until a formal quotation is issued.
-      </p>
-      <div class="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-amber-950">
-        <strong>Cosmetics disclaimer:</strong> Clearion Labs products are cosmetics / personal care (e.g. facial cleansing mists and daily skin sprays).
-        They are not intended to diagnose, treat, cure, or prevent disease. No FDA-cleared drug or device claims are made for these products on this site.
-      </div>
-    </div>
-  </article>
-</PageLayout>
+<LegalPage locale="en" copy={getTerms('en')} />

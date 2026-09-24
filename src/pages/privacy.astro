@@ -1,29 +1,5 @@
 ---
-import PageLayout from '../layouts/PageLayout.astro';
+import LegalPage from '../views/LegalPage.astro';
+import { getPrivacy } from '../i18n/pages';
 ---
-
-<PageLayout title="Privacy Policy" description="Privacy policy stub for Clearion Labs B2B website.">
-  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <h1 class="text-3xl font-bold tracking-tight text-slate-900">Privacy Policy</h1>
-    <p class="mt-2 text-sm text-slate-500">Last updated: September 22, 2026 · Stub for v1 launch</p>
-
-    <div class="prose-sm mt-8 space-y-4 text-slate-700 leading-relaxed">
-      <p>
-        Clearion Labs (“we”) operates this website to receive B2B inquiries about HOCl spray OEM, private label, and wholesale.
-        When you submit the inquiry form, we collect the information you provide (such as name, email, company, buyer type, and message)
-        to respond to your request.
-      </p>
-      <p>
-        Form data may be stored in your browser (localStorage) for confirmation and/or sent to our inquiry endpoint or email.
-        We do not sell personal information. Do not submit sensitive health information — this site is for cosmetics / personal care B2B inquiries only.
-      </p>
-      <p>
-        For privacy requests, email <strong>inquiries@clearionlabs.example</strong> (placeholder — replace before production).
-      </p>
-      <div class="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">
-        <strong>Cosmetics disclaimer:</strong> Products discussed on this site are intended as cosmetics / personal care.
-        They are not drugs and are not intended to diagnose, treat, cure, or prevent any disease.
-      </div>
-    </div>
-  </article>
-</PageLayout>
+<LegalPage locale="en" copy={getPrivacy('en')} />

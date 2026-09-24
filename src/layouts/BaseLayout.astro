@@ -1,27 +1,39 @@
 ---
 import '../styles/global.css';
+import {
+  getLocaleFromPath,
+  getHreflangMap,
+  LOCALE_META,
+  LOCALES,
+  type Locale,
+} from '../i18n/locales';
 
 interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  locale?: Locale;
 }
 
 const {
   title,
   description = 'Clearion Labs — HOCl spray OEM, private label, and wholesale for salons, retailers, and distributors. Sample-first. Cosmetics-grade personal care.',
   canonical,
+  locale: localeProp,
 } = Astro.props;
 
+const locale = localeProp ?? getLocaleFromPath(Astro.url.pathname);
+const meta = LOCALE_META[locale];
 const siteName = 'Clearion Labs';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 const site = Astro.site ?? new URL('https://hocl.tradeglo.net');
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const canonicalUrl = canonical ?? new URL(path === '/' ? '/' : path, site).href;
+const hreflangMap = getHreflangMap(Astro.url.pathname);
 ---
 
 <!doctype html>
-<html lang="en-US">
+<html lang={meta.htmlLang} dir={meta.dir}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,6 +46,18 @@ const canonicalUrl = canonical ?? new URL(path === '/' ? '/' : path, site).href;
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={meta.ogLocale} />
+    {
+      hreflangMap &&
+        LOCALES.map((loc) => (
+          <link
+            rel="alternate"
+            hreflang={LOCALE_META[loc].htmlLang}
+            href={new URL(hreflangMap[loc] === '/' ? '/' : hreflangMap[loc], site).href}
+          />
+        ))
+    }
+    {hreflangMap && <link rel="alternate" hreflang="x-default" href={new URL('/', site).href} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

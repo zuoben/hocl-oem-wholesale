@@ -1,10 +1,14 @@
 ---
-const items = [
-  { label: 'Sample-first', hint: 'Approve before bulk' },
-  { label: 'Quote ~24h', hint: 'Business-day replies' },
-  { label: 'Cosmetics compliance', hint: 'Personal care framing' },
-  { label: 'Export-ready', hint: 'Packaging & logistics' },
-];
+import { getLocaleFromPath, type Locale } from '../i18n/locales';
+import { getTrust } from '../i18n/pages';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale: localeProp } = Astro.props;
+const locale = localeProp ?? getLocaleFromPath(Astro.url.pathname);
+const items = getTrust(locale);
 ---
 
 <section class="border-y border-slate-200 bg-white py-8">

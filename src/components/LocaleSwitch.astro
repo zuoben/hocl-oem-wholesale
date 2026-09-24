@@ -1,0 +1,40 @@
+---
+import { getLocaleFromPath, switchLocalePath, LOCALES, LOCALE_META } from '../i18n/locales';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+const locale = getLocaleFromPath(Astro.url.pathname);
+---
+
+<details class:list={['relative', className]}>
+  <summary
+    class="cursor-pointer list-none rounded-lg border border-slate-200 px-2.5 py-1.5 text-[11px] font-semibold tracking-wide text-slate-600 hover:bg-slate-50 [&::-webkit-details-marker]:hidden"
+  >
+    {LOCALE_META[locale].name}
+  </summary>
+  <ul
+    class="absolute end-0 z-[80] mt-1 max-h-[min(70vh,22rem)] min-w-[9rem] overflow-y-auto overscroll-contain rounded-lg border border-slate-200 bg-white py-1 text-xs shadow-lg"
+  >
+    {
+      LOCALES.map((loc) => (
+        <li>
+          <a
+            href={switchLocalePath(Astro.url.pathname + Astro.url.hash, loc)}
+            hreflang={LOCALE_META[loc].htmlLang}
+            lang={LOCALE_META[loc].htmlLang}
+            class:list={[
+              'block px-3 py-1.5 hover:bg-slate-50',
+              loc === locale ? 'font-bold text-brand-700' : 'text-slate-600',
+            ]}
+            aria-current={loc === locale ? 'true' : undefined}
+          >
+            {LOCALE_META[loc].name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>

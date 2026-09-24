@@ -1,108 +1,123 @@
 ---
+import { getLocaleFromPath, type Locale } from '../i18n/locales';
+import { getForm } from '../i18n/pages';
+
 interface Props {
   id?: string;
   title?: string;
   subtitle?: string;
   defaultBuyerType?: string;
   defaultProduct?: string;
+  locale?: Locale;
 }
 
 const {
   id = 'inquiry-form',
-  title = 'Request a quote',
-  subtitle = 'Tell us your program needs — we typically reply within ~24 hours on business days.',
+  title,
+  subtitle,
   defaultBuyerType = '',
   defaultProduct = 'HOCl spray',
+  locale: localeProp,
 } = Astro.props;
+
+const locale = localeProp ?? getLocaleFromPath(Astro.url.pathname);
+const f = getForm(locale);
+const formTitle = title ?? f.title;
+const formSubtitle = subtitle ?? f.subtitle;
+
+// Map defaultBuyerType English keys to localized option values (values stay English for CRM)
 ---
 
 <section id={id} class="scroll-mt-24 bg-slate-50 py-16 sm:py-20">
   <div class="mx-auto max-w-3xl px-4 sm:px-6">
     <div class="text-center">
-      <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">Inquiry</p>
-      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{title}</h2>
-      <p class="mt-3 text-slate-600">{subtitle}</p>
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-700">{f.kicker}</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{formTitle}</h2>
+      <p class="mt-3 text-slate-600">{formSubtitle}</p>
     </div>
 
     <form
       data-inquiry-form
+      data-success-ok={f.successOk}
+      data-success-fallback={f.successFallback}
+      data-error={f.error}
       class="mt-10 space-y-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
       method="post"
       action="/api/inquiry"
     >
       <div class="grid gap-5 sm:grid-cols-2">
         <div>
-          <label for="name" class="block text-sm font-medium text-slate-700">Name <span class="text-red-500">*</span></label>
-          <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name"
+          <label for="name" class="block text-sm font-medium text-slate-700">{f.name} <span class="text-red-500">*</span></label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder={f.namePh}
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-slate-700">Email <span class="text-red-500">*</span></label>
-          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"
+          <label for="email" class="block text-sm font-medium text-slate-700">{f.email} <span class="text-red-500">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder={f.emailPh}
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
         </div>
       </div>
 
       <div>
-        <label for="company" class="block text-sm font-medium text-slate-700">Company</label>
-        <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company / brand name"
+        <label for="company" class="block text-sm font-medium text-slate-700">{f.company}</label>
+        <input id="company" name="company" type="text" autocomplete="organization" placeholder={f.companyPh}
           class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
       </div>
 
       <div class="grid gap-5 sm:grid-cols-2">
         <div>
-          <label for="buyerType" class="block text-sm font-medium text-slate-700">Buyer type <span class="text-red-500">*</span></label>
-          <select id="buyerType" name="buyerType" required value={defaultBuyerType}
+          <label for="buyerType" class="block text-sm font-medium text-slate-700">{f.buyerType} <span class="text-red-500">*</span></label>
+          <select id="buyerType" name="buyerType" required
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20">
-            <option value="" disabled={!!defaultBuyerType}>Select…</option>
-            <option value="OEM / Private Label">OEM / Private Label</option>
-            <option value="Wholesale">Wholesale</option>
-            <option value="Both / Exploring">Both / Exploring</option>
-            <option value="Salon / Spa">Salon / Spa</option>
-            <option value="Retailer">Retailer</option>
-            <option value="Distributor">Distributor</option>
+            <option value="" disabled={!!defaultBuyerType} selected={!defaultBuyerType}>{f.select}</option>
+            <option value="OEM / Private Label" selected={defaultBuyerType === 'OEM / Private Label'}>{f.buyerOem}</option>
+            <option value="Wholesale" selected={defaultBuyerType === 'Wholesale'}>{f.buyerWholesale}</option>
+            <option value="Both / Exploring" selected={defaultBuyerType === 'Both / Exploring'}>{f.buyerBoth}</option>
+            <option value="Salon / Spa" selected={defaultBuyerType === 'Salon / Spa'}>{f.buyerSalon}</option>
+            <option value="Retailer" selected={defaultBuyerType === 'Retailer'}>{f.buyerRetailer}</option>
+            <option value="Distributor" selected={defaultBuyerType === 'Distributor'}>{f.buyerDistributor}</option>
           </select>
         </div>
         <div>
-          <label for="productInterest" class="block text-sm font-medium text-slate-700">Product interest <span class="text-red-500">*</span></label>
-          <select id="productInterest" name="productInterest" required value={defaultProduct}
+          <label for="productInterest" class="block text-sm font-medium text-slate-700">{f.productInterest} <span class="text-red-500">*</span></label>
+          <select id="productInterest" name="productInterest" required
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20">
-            <option value="HOCl spray">HOCl spray (hero)</option>
-            <option value="HOCl spray + packaging only">HOCl spray + packaging only</option>
-            <option value="HOCl + side SKUs (PDRN etc.)">HOCl + side SKUs (PDRN etc.)</option>
-            <option value="Other / discuss">Other / discuss</option>
+            <option value="HOCl spray" selected={defaultProduct === 'HOCl spray'}>{f.productHocl}</option>
+            <option value="HOCl spray + packaging only" selected={defaultProduct === 'HOCl spray + packaging only'}>{f.productPackaging}</option>
+            <option value="HOCl + side SKUs (PDRN etc.)" selected={defaultProduct === 'HOCl + side SKUs (PDRN etc.)'}>{f.productSide}</option>
+            <option value="Other / discuss" selected={defaultProduct === 'Other / discuss'}>{f.productOther}</option>
           </select>
         </div>
       </div>
 
       <div class="grid gap-5 sm:grid-cols-2">
         <div>
-          <label for="quantity" class="block text-sm font-medium text-slate-700">Quantity / MOQ notes</label>
-          <input id="quantity" name="quantity" type="text" placeholder="e.g. sample, 500 pcs, 5,000+/mo"
+          <label for="quantity" class="block text-sm font-medium text-slate-700">{f.quantity}</label>
+          <input id="quantity" name="quantity" type="text" placeholder={f.quantityPh}
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
         </div>
         <div>
-          <label for="country" class="block text-sm font-medium text-slate-700">Destination country</label>
-          <input id="country" name="country" type="text" autocomplete="country-name" placeholder="e.g. United States"
+          <label for="country" class="block text-sm font-medium text-slate-700">{f.country}</label>
+          <input id="country" name="country" type="text" autocomplete="country-name" placeholder={f.countryPh}
             class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20" />
         </div>
       </div>
 
       <div>
-        <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+        <label for="message" class="block text-sm font-medium text-slate-700">{f.message}</label>
         <textarea id="message" name="message" rows="4"
-          placeholder="Concentration target, bottle size, private-label artwork, timeline, compliance markets…"
+          placeholder={f.messagePh}
           class="mt-1.5 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"></textarea>
       </div>
 
       <label class="flex items-start gap-2 text-sm text-slate-600">
         <input type="checkbox" name="consent" required class="mt-1 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-        <span>I agree to be contacted by Clearion Labs about this OEM / wholesale inquiry. Cosmetics / personal care inquiries only.</span>
+        <span>{f.consent}</span>
       </label>
 
       <button type="submit"
         class="w-full rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 sm:w-auto">
-        Submit Inquiry
+        {f.submit}
       </button>
 
       <p data-form-status class="hidden text-sm" role="status"></p>
@@ -124,11 +139,14 @@ const {
     payload.submittedAt = new Date().toISOString();
     payload.source = window.location.pathname;
 
+    const successOk = form.dataset.successOk || '';
+    const successFallback = form.dataset.successFallback || '';
+    const errorMsg = form.dataset.error || '';
+
     try {
       localStorage.setItem('clearion_inquiry_last', JSON.stringify(payload));
       console.info('[clearion inquiry]', payload);
 
-      // Prefer Pages Function if present; fall back to mailto
       let ok = false;
       try {
         const res = await fetch('/api/inquiry', {
@@ -154,9 +172,7 @@ const {
       if (statusEl) {
         statusEl.classList.remove('hidden', 'text-red-600');
         statusEl.classList.add('text-brand-700');
-        statusEl.textContent = ok
-          ? 'Thanks — your inquiry was received. We typically reply within ~24 hours on business days.'
-          : 'Opening your email client as a fallback. You can also email inquiries@clearionlabs.example.';
+        statusEl.textContent = ok ? successOk : successFallback;
       }
       form.reset();
     } catch (err) {
@@ -164,7 +180,7 @@ const {
       if (statusEl) {
         statusEl.classList.remove('hidden', 'text-brand-700');
         statusEl.classList.add('text-red-600');
-        statusEl.textContent = 'Something went wrong. Please email inquiries@clearionlabs.example.';
+        statusEl.textContent = errorMsg;
       }
     }
   });
