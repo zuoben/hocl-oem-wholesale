@@ -176,6 +176,16 @@ const en: LocaleDictionary = {
         description:
           'No. Clearion Labs positions HOCl sprays as <strong>cosmetics / personal care</strong>. We do not make disease treatment claims and do not use FDA-cleared drug/device wording for these products.',
       },
+      {
+        title: 'What MOQ should I expect for HOCl spray?',
+        description:
+          'Carton-based MOQs are quoted by SKU. Pilots and samples can start smaller; branded mass-production MOQs depend on packaging complexity. Share launch quantity and destination on the RFQ for a clear tier.',
+      },
+      {
+        title: 'What can I customize on a private-label HOCl project?',
+        description:
+          'Typical levers: concentration / pH as disclosed specs, fill volume (retail ~60–120&nbsp;ml or travel ~20&nbsp;ml), bottle &amp; actuator, label &amp; carton artwork, and inner/outer packaging. Cosmetics / personal care framing only — no disease-treatment claims.',
+      },
     ],
     formTitle: 'Get a factory-style quote',
   },
