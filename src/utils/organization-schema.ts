@@ -1,4 +1,5 @@
 import { getSiteUrl } from './site-url';
+import { products } from '../data/products';
 
 export const ORGANIZATION_ID = `${getSiteUrl()}/#organization`;
 export const BRAND_NAME = 'Clearion Labs';
@@ -116,6 +117,36 @@ export function buildFaqPageSchema(items: { title: string; description: string }
       acceptedAnswer: {
         '@type': 'Answer',
         text: description.replace(/<[^>]+>/g, ''),
+      },
+    })),
+  };
+}
+
+export function buildProductItemListSchema() {
+  const siteUrl = getSiteUrl();
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Clearion Labs B2B product lines',
+    itemListElement: products.map((line, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Product',
+        name: line.name,
+        description: `${line.tagline}. ${line.bullets[0] ?? ''}`.trim(),
+        image: `${siteUrl}${line.image}`,
+        url: `${siteUrl}/`,
+        brand: { '@type': 'Brand', name: BRAND_NAME },
+        category: line.tagline || undefined,
+        offers: {
+          '@type': 'Offer',
+          url: `${siteUrl}/contact#inquiry-form`,
+          availability: 'https://schema.org/InStock',
+          priceCurrency: 'USD',
+          description:
+            'Factory quote on inquiry; MOQ and private-label options quoted by SKU from the product-line brief on this page.',
+        },
       },
     })),
   };
